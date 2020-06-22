@@ -1,0 +1,83 @@
+{% extends 'base.html'%}
+{% block title%} نتائج البحث {% endblock %}
+{% load static %}
+{% block content %}
+<style>
+    
+</style>
+<section class="breadcrumbs-custom">
+    <div class="parallax-container" data-parallax-img="{% static 'images/bg.jpg' %}">
+        <div class="breadcrumbs-custom-body parallax-content context-dark">
+            <div class="container">
+                <h2 class="text-transform-capitalize breadcrumbs-custom-title">نتائج البحث</h2>
+
+            </div>
+        </div>
+    </div>
+    <div class="breadcrumbs-custom-footer">
+
+    </div>
+</section>
+<!-- Search results-->
+<section class="section section-xl bg-default">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-9">
+                <!-- RD Search-->
+                <form class="rd-form rd-search rd-form-inline" action="{% url 'search' %}" method="GET">
+                    <div class="form-button">
+                        <button class="button button-primary" type="submit">ابحث</button>
+                    </div>
+                    <div class="form-wrap">
+                        <input class="form-input" id="rd-search-form-input" type="text" name="s" value="{{keyword}}"
+                            autocomplete="off" dir="rtl">
+                        <label class="form-label" for="rd-search-form-input">ادخل كلمة للبحث في منتجاتنا</label>
+                    </div>
+
+                </form>
+                <div class="rd-search-results">
+                    {% if result %}
+                    <div class="row row-30 row-md-50 row-lg-60">
+                        {% for i in result %}
+                        <div class="col-12" dir="rtl">
+                            <!-- Product-->
+                            <article class="product-modern text-center text-sm-right">
+                                <div class="unit unit-spacing-0 flex-column flex-sm-row">
+                                    <div class="unit-left">
+                                        <a class="product-modern-figure"
+                                            href="/product/{{i.id}}">
+                                            <img src="{{i.main_image.url}}"
+                                                alt="product image" width="100px" height="100px" />
+                                        </a>
+                                    </div>
+                                    <div class="unit-body">
+                                        <div class="product-modern-body">
+                                            <h4 class="product-modern-title"><a href="/product/{{i.id}}">{{i.title}}</a>
+                                            </h4>
+                                            <div class="product-price-wrap">
+                                                <div class="product-price">{{i.price}}</div>
+                                            </div>
+                                            <p class="product-modern-text">{{i.description| truncatechars:50}}</p>
+                                            <form action="{% url 'cart' %}" method="POST">
+                                                {% csrf_token %}
+                                                <input type="hidden" value="{{pro.id}}" name="product_id">
+                                                <input type="hidden" value="1" name="qty">
+                                                <button class="button button-primary button-zakaria ">أضف الي السلة</button>
+                                              </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        {%endfor %}
+                    </div>
+                    {% else %}
+                    <h5>لاتوجد منتجات متطابقة مع الكلمات التي ادخلتها</h5>
+                    {%endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

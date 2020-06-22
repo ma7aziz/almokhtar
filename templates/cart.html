@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% block title%} المشتريات {% endblock %}
+{% load static%}
+{% block content %}
+<section class="breadcrumbs-custom">
+  <div class="parallax-container" data-parallax-img="{% static 'images/bg.jpg'  %}">
+    <div class="breadcrumbs-custom-body parallax-content context-dark">
+      <div class="container">
+        <h2 class="text-transform-capitalize breadcrumbs-custom-title">Cart Page</h2>
+        <h5 class="breadcrumbs-custom-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius <br
+            class="d-none d-md-block">mod tempor incididunt ut labore et dolore magna aliqua.</h5>
+      </div>
+    </div>
+  </div>
+  <div class="breadcrumbs-custom-footer">
+    <div class="container">
+      <ul class="breadcrumbs-custom-path">
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="{%url 'shop' %}">Shop</a></li>
+        <li class="active">Cart Page</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- Shopping Cart-->
+<section class="section section-xl bg-default">
+  <div class="container">
+    <!-- shopping-cart-->
+    {% if cart %}
+    <div class="table-custom-responsive" dir="">
+      <table class="table-custom table-cart" dir="">
+        <thead>
+          <tr>
+          
+            <th>المنتج</th>
+            <th>السعر</th>
+            <th>الكمية</th>
+            <th>السعر الأجمالي</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for i in cart.cart_item_set.all%}
+          <tr>
+            
+            <td>
+              <a href="{%url 'remove_cart' i.id %}" style="margin-right: 25px; color: red" title="مسح">-</a>
+              <a class="table-cart-figure" href="/product/{{i.item.id}}">
+                <img src="{{i.item.main_image.url}}" alt="" width="146" height="132" />
+              </a>
+              <a class="table-cart-link" href="/product/{{i.item.id}}">{{i}}</a>
+            </td>
+            <td>{{i.item.price}}</td>
+            <td>
+              <div class="table-cart-stepper">
+                <input class="form-input" type="number" data-zeros="true" value="{{i.qty}}" min="1" max="1000">
+              </div>
+            </td>
+            <td>{{i.total_price}}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <div class="group-xl group-justify justify-content-center justify-content-md-between">
+      <!-- <div>
+        <form class="rd-form rd-mailform rd-form-inline rd-form-coupon">
+          <div class="form-wrap">
+            <input class="form-input form-input-inverse" id="coupon-code" type="text" name="text">
+            <label class="form-label" for="coupon-code">Coupon code</label>
+          </div>
+          <div class="form-button">
+            <button class="button button-lg button-secondary button-zakaria" type="submit">Apply</button>
+          </div>
+        </form>
+      </div> -->
+      <div>
+        <div class="group-xl group-middle">
+          <a class="button button-lg button-primary button-zakaria" href="{%url 'checkout' %}">الشراء</a>
+          <div>
+            <div class="group-md group-middle" dir="rtl">
+              <div class="heading-5 font-weight-medium text-gray-500">الاجمالي</div>
+              <div class="heading-3 font-weight-normal">{{cart.cart_price}}</div>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+    {% else %}
+      <h5>لم تقم بأضافة اي منتجات للسلة </h5>
+      <a href="{% url 'shop' %}" class="button button-primpry"> ابدأ التسوق </a>
+    {% endif %}
+  </div>
+</section>
+
+{% endblock %}
