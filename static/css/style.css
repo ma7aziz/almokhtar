@@ -349,7 +349,7 @@ body {
     font-weight: 400;
     letter-spacing: .05em;
     /* font-family: 'Cairo', lato, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif; */
-    font-family: 'Cairo', 'Cairo', lato, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family:  'Cairo', Arial, sans-serif;
     color: #777;
     background-color: #fff;
     -webkit-text-size-adjust: none;
@@ -366,7 +366,7 @@ h6,
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 500;
-    font-family: 'Cairo', 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;;
+    font-family: 'Cairo',  Arial, sans-serif;;
     
     letter-spacing: .05em;
     text-transform: uppercase;
@@ -11514,11 +11514,11 @@ html:not(.lt-ie10) .not-animated {
     width: 100%;
     height: 100%;
     border-radius: 100%;
-    border: 5px solid rgba(60, 195, 193, .7);
+    border: 5px solid rgba(184, 172, 65, 0.7);
     border-right: none;
     border-top: none;
     background-clip: padding;
-    box-shadow: inset 0 0 10px rgba(60, 195, 193, .15)
+    box-shadow: inset 0 0 10px rgba(195, 170, 60, 0.15)
 }
 
 .cssload-circle:nth-of-type(0) {

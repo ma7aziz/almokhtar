@@ -12,8 +12,11 @@
 	<link rel="stylesheet" type="text/css"
 		href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CLato%7CKalam:300,400,700">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+	
 		integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
-	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap">
+		<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+
 	<link rel="stylesheet" href="{% static 'css/fonts.css' %}">
 	<link rel="stylesheet" href="{% static 'css/style.css' %}">
 	<style>
@@ -71,7 +74,8 @@
 	</div>
 	<div class="page">
 		<header {% if request.path == '/' %} class="section page-header header-creative-wrap context-dark" {% else %}
-			class="section page-header " {% endif %}>
+			class="section page-header " 
+			{% endif %}>
 			<!-- RD Navbar-->
 			<div class="rd-navbar-wrap">
 				<nav class="rd-navbar rd-navbar-creative rd-navbar-creative-2" data-layout="rd-navbar-fixed"
@@ -88,12 +92,12 @@
 						<div class="rd-navbar-aside">
 							<div class="rd-navbar-collapse">
 								<ul class="contacts-classic">
-									<li><span class="contacts-classic-title">Call us:</span> <a class="link"
+									<li><span class="contacts-classic-title">اتصل بنا:</span> <a class="link"
 											href="tel:#">+1 (844) 123 456 78</a>
 									</li>
 									<li><a href="mailto:#">info@demolink.org</a></li>
 								</ul><a class="rd-navbar-basket rd-navbar-basket-mobile fl-bigmug-line-shopping202"
-									href="#"><span>2</span></a>
+									href="{% url 'cart' %}"><span>{{cart.cart_count}}</span></a>
 							</div>
 							<!-- RD Navbar Panel-->
 							<div class="rd-navbar-panel">
@@ -103,12 +107,13 @@
 								<!-- RD Navbar Brand-->
 								<div class="rd-navbar-brand">
 									<!--Brand-->
-									<a class="brand" href="{%url 'index' %}">
-										<img class="brand-logo-dark" src="{% static 'images/logo-default-234x82.png' %}"
+									<a class="brand" href="{%url 'index' %}"> <h3>المختار للتجارة</h3>
+										<!-- <img class="brand-logo-dark" src="{% static 'images/logo-default-234x82.png' %}"
 											alt="" width="117" height="41" />
 										<img class="brand-logo-light"
 											src="{% static 'images/logo-inverse-234x82.webp' %}" alt="" width="117"
-											height="41" /></a>
+											height="41" />-->
+										</a> 
 								</div>
 							</div>
 							<div class="rd-navbar-aside-element">
@@ -196,23 +201,15 @@
 						<div class="rd-navbar-main">
 							<div class="rd-navbar-nav-wrap">
 								<ul class="rd-navbar-nav">
-									<li class="rd-nav-item active"><a class="rd-nav-link"
-											href="{%url 'index' %}">الرئيسية</a>
+								<li class="rd-nav-item"><a class="rd-nav-link" href="">اتصل بنا </a>
 									</li>
-									<!-- <li class="rd-nav-item"><a class="rd-nav-link" href="#">Pages</a>
-				
-						</li> -->
-									<!-- <li class="rd-nav-item"><a class="rd-nav-link" href="blog-list.html">Blog</a>
-						 
-						</li>
-						<li class="rd-nav-item"><a class="rd-nav-link" href="gallery.html">Gallery</a>
-						 
-						</li> -->
 									<li class="rd-nav-item"><a class="rd-nav-link" href="{%url 'shop' %}">منتجاتنا</a>
 
 									</li>
-									<li class="rd-nav-item"><a class="rd-nav-link" href="">اتصل بنا </a>
-									</li>
+									
+									<li class="rd-nav-item active"><a class="rd-nav-link"
+										href="{%url 'index' %}">الرئيسية</a>
+								</li>
 								</ul>
 							</div>
 						</div>
@@ -292,19 +289,13 @@
 							</ul>
 						</div>
 						<div class="col-sm-6 col-md-5 col-lg-4 col-xl-3 wow fadeInRight" data-wow-delay=".2s">
-							<h5 class="footer-modern-title">Get in touch</h5>
+							<h5 class="footer-modern-title">تواصل معنا</h5>
 							<ul class="contacts-creative">
-								<li>
-									<div class="unit unit-spacing-sm flex-column flex-md-row">
-										<div class="unit-left"><span class="icon mdi mdi-map-marker"></span></div>
-										<div class="unit-body"><a href="#">523 Sylvan Ave, 5th Floor<br />Mountain View,
-												CA 94041 USA</a></div>
-									</div>
-								</li>
+								
 								<li>
 									<div class="unit unit-spacing-sm flex-column flex-md-row">
 										<div class="unit-left"><span class="icon mdi mdi-phone"></span></div>
-										<div class="unit-body"><a href="tel:#">+1 (844) 123 456 78</a></div>
+										<div class="unit-body"><a href="tel:+201158666734">01158666734</a></div>
 									</div>
 								</li>
 								<li>
@@ -315,11 +306,11 @@
 								</li>
 							</ul>
 							<ul class="list-inline list-social-3 list-inline-sm">
-								<li><a class="icon mdi mdi-facebook icon-xxs" href="#"></a></li>
-								<li><a class="icon mdi mdi-twitter icon-xxs" href="#"></a></li>
-								<li><a class="icon mdi mdi-instagram icon-xxs" href="#"></a></li>
+								<li><a class="icon mdi mdi-facebook icon-xxs" href="https://www.facebook.com/Elmokhtarlltagra/?epa=SEARCH_BOX" target="_blank"></a></li>
+								<li><a class="icon mdi mdi-whatsapp icon-xxs" href="https://wa.me/201011240195"></a></li>
+								<!-- <li><a class="icon mdi mdi-instagram icon-xxs" href="#"></a></li>
 								<li><a class="icon mdi mdi-google-plus icon-xxs" href="#"></a></li>
-								<li><a class="icon mdi mdi-skype icon-xxs" href="#"></a></li>
+								<li><a class="icon mdi mdi-skype icon-xxs" href="#"></a></li> -->
 							</ul>
 						</div>
 					</div>

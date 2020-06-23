@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% block title%} اتصل بنا {%endblock%}
+{% load static %}
+{% block content %}
+<section class="breadcrumbs-custom">
+    <div class="parallax-container" data-parallax-img="{%static 'images/bg.jpg' %}">
+      <div class="breadcrumbs-custom-body parallax-content context-dark">
+        <div class="container">
+          <h2 class="text-transform-capitalize breadcrumbs-custom-title">تواصل معنا </h2>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  <!-- Get in touch-->
+  <section class="section section-xl bg-default text-md-right" dir="rtl">
+    <div class="container">
+      <div class="title-classic">
+        <h3 class="title-classic-title">للتواصل </h3>
+        <p class="title-classic-subtitle">يمكنك ارسال رسالة للتعليق او الاستفسار عن منتجاتنا <br class="d-none d-lg-block"> وسوف نقوم بالرد في اقرب وقت ممكن</p>
+      </div>
+      <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="POST" action="{% url 'contact' %}" dir="rtl">
+        {% csrf_token %}
+        <div class="row row-20 row-md-30">
+          <div class="col-lg-8">
+            <div class="row row-20 row-md-30">
+              
+              <div class="col-12">
+                <div class="form-wrap">
+                  <input class="form-input" id="contact-last-name-2" type="text" name="name" data-constraints="@Required" required/>
+                  <label class="form-label" for="contact-last-name-2" dir="">الاسم</label>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-wrap">
+                  <input class="form-input" id="contact-email-2" type="email" name="email" data-constraints="@Email @Required" required/>
+                  <label class="form-label" for="contact-email-2">البريد الالكتروني</label>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-wrap">
+                  <input class="form-input" id="contact-phone-2" type="text" name="phone" data-constraints="@Numeric" required/>
+                  <label class="form-label" for="contact-phone-2">رقم التليفون</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="form-wrap">
+              <label class="form-label" for="contact-message-2">رسالتك</label>
+              <textarea class="form-input textarea-lg" id="contact-message-2" name="message" data-constraints="@Required" required></textarea>
+            </div>
+          </div>
+        </div>
+        <button class="button button-lg button-primary button-zakaria" type="submit">ارسال</button>
+      </form>
+    </div>
+  </section>
+  <!-- Get in touch-->
+  <section class="section section-xl bg-gray-4">
+    <div class="container">
+      <div class="row row-30 justify-content-center">
+        <div class="col-4">
+          <h4>رقم التليفون</h4>
+          <ul class="contacts-classic">
+            <li><a href="tel:+20101158666734">01158666734</a>
+            </li>
+           
+          </ul>
+        </div>
+        <div class="col-4">
+          <h4>واتساب</h4>
+          <ul class="contacts-classic">
+            <li><a href="https://wa.me/201011240195">01011240195</a>
+            </li>
+           
+          </ul>
+        </div>
+        
+        <div class="col-4">
+          <h4>البريد الاليكتروني</h4>
+          <ul class="contacts-classic">
+            
+            <li><a href="mailTo:#">mail@demolink.org</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

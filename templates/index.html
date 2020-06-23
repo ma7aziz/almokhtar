@@ -5,21 +5,19 @@
 <!-- Swiper-->
 <section class="section swiper-container swiper-slider swiper-slider-4" data-loop="true" data-autoplay="5000">
     <div class="swiper-wrapper context-dark">
-        <div class="swiper-slide swiper-slide-1" data-slide-bg="{% static 'images/slide-1.jpg' %}">
+        
+        <div class="swiper-slide swiper-slide-1" data-slide-bg="https://images.unsplash.com/photo-1555035900-54c17f3bc1eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=625&q=80">
             <div class="swiper-slide-caption section-md text-center">
                 <div class="container">
-   
-                        
-                            <h2 class="swiper-title-1" data-caption-animate="fadeInLeft" data-caption-delay="100">والعسل معروف عند معظم.</h2>
-                            <h5 class="swiper-title-2" data-caption-animate="fadeInRight" data-caption-delay="250">With our wide
-                                variety of vegan & organic food products, we are sure <br class="d-none d-md-block">to help you
-                                make the right choice to start your day.
-                            </h5>
-                            <div class="button-wrap" data-caption-animate="fadeInLeft" data-caption-delay="400"><a
-                                    class="button button-lg button-shadow-5 button-default-outline button-zakaria"
-                                    href="{%url 'shop' %}">منتجاتنا</a></div>
-                        
-            
+                    <h2 class="swiper-title-1" data-caption-animate="fadeInLeft" data-caption-delay="100">
+                        عسل النحل الطبيعي</h2>
+                    <h5 class="swiper-title-2" data-caption-animate="fadeInRight" data-caption-delay="250">With our wide
+                        variety of vegan & organic food products, we are sure <br class="d-none d-md-block">to help you
+                        make the right choice to start your day.
+                    </h5>
+                    <div class="button-wrap" data-caption-animate="fadeInUp" data-caption-delay="400"><a
+                            class="button button-lg button-shadow-5 button-default-outline button-zakaria"
+                            href="{%url 'shop' %}">منتجاتنا</a></div>
                 </div>
             </div>
         </div>
@@ -485,4 +483,187 @@
             المنتجات </a>
     </div>
 </section>
+<section class="section section-xxl bg-image-1">
+    <div class="container">
+      <h2 class="text-transform-capitalize wow fadeScale">What People Say</h2>
+      <div class="row row-sm row-30 justify-content-center">
+        <div class="col-xl-9">
+          <div class="slick-quote">
+            <!-- Slick Carousel-->
+            <div class="slick-slider carousel-parent" id="carousel-parent" data-autoplay="true" data-swipe="true" data-items="1" data-child="#child-carousel" data-for="#child-carousel">
+              <div class="item">
+                <p class="quote-minimal-text">I absolutely love the high quality of the food and the great customer service. I’ve been customers since 2006 and love the Burgundy Pepper London Broil.</p>
+              </div>
+              <div class="item">
+                <p class="quote-minimal-text">I love not having to run to the grocery store all the time for last minute things. Everything I need is already here and it’s healthier, hormone-free.</p>
+              </div>
+              <div class="item">
+                <p class="quote-minimal-text">As a 5+ year customer, I enjoy the quality of vegetables knowing that my family is getting good quality products. A great experience all the way round.</p>
+              </div>
+            </div>
+            <div class="slick-quote-nav">
+              <div class="slick-slider child-carousel" id="child-carousel" data-arrows="true" data-for="#carousel-parent" data-items="1" data-sm-items="1" data-md-items="3" data-lg-items="3" data-xl-items="3" data-xxl-items="3">
+                <div class="item">
+                  <div class="quote-minimal-figure"><img src="images/user-7-87x87.jpg" alt="" width="87" height="87"/>
+                  </div>
+                  <div class="quote-minimal-author">Patricia Goodman</div>
+                  <div class="quote-minimal-status">Client</div>
+                </div>
+                <div class="item">
+                  <div class="quote-minimal-figure"><img src="images/user-8-87x87.jpg" alt="" width="87" height="87"/>
+                  </div>
+                  <div class="quote-minimal-author">Jane Smith</div>
+                  <div class="quote-minimal-status">Client</div>
+                </div>
+                <div class="item">
+                  <div class="quote-minimal-figure"><img src="images/user-9-87x87.jpg" alt="" width="87" height="87"/>
+                  </div>
+                  <div class="quote-minimal-author">Sam Wilson</div>
+                  <div class="quote-minimal-status">Client</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<section class="section section-xxl bg-default">
+    <div class="container">
+      <h2 class="text-transform-capitalize wow fadeScale">Our Gallery</h2>
+      <div class="isotope-wrap">
+        <div class="isotope-filters">
+          <button class="isotope-filters-toggle button button-sm button-icon button-icon-right button-default-outline" data-custom-toggle=".isotope-filters-list" data-custom-toggle-disable-on-blur="true" data-custom-toggle-hide-on-blur="true"><span class="icon mdi mdi-chevron-down"></span>Filter</button>
+          <div class="isotope-filters-list-wrap">
+            <ul class="isotope-filters-list">
+              <li><a class="active" href="#" data-isotope-filter="*">All</a></li>
+              <li><a href="#" data-isotope-filter="Type 1">Fruits</a></li>
+              <li><a href="#" data-isotope-filter="Type 2">Vegetables</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row row-30 isotope isotope-custom-1" data-lightgallery="group">
+          <div class="col-sm-6 col-lg-4 col-xl-3 isotope-item" data-filter="Type 1">
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail-classic block-1">
+              <div class="thumbnail-classic-figure"><img src="images/masonry-gallery-1-270x250.jpg" alt="" width="270" height="250"/>
+              </div>
+              <div class="thumbnail-classic-caption">
+                <div>
+                  <h5 class="thumbnail-classic-title"><a href="single-product.html">Bananas</a></h5>
+                  <div class="thumbnail-classic-price">$12.99</div>
+                  <div class="thumbnail-classic-button-wrap">
+                    <div class="thumbnail-classic-button"><a class="button button-gray-6 button-zakaria fl-bigmug-line-search74" href="images/grid-gallery-4-1200x800-original.jpg" data-lightgallery="item"><img src="images/masonry-gallery-1-270x250.jpg" alt="" width="270" height="250"/></a></div>
+                    <div class="thumbnail-classic-button"><a class="button button-primary button-zakaria fl-bigmug-line-shopping202" href="cart-page.html"></a></div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-3 isotope-item" data-filter="Type 2">
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail-classic block-1">
+              <div class="thumbnail-classic-figure"><img src="images/masonry-gallery-2-270x530.jpg" alt="" width="270" height="530"/>
+              </div>
+              <div class="thumbnail-classic-caption">
+                <div>
+                  <h5 class="thumbnail-classic-title"><a href="single-product.html">Tomatoes</a></h5>
+                  <div class="thumbnail-classic-price">$13.99</div>
+                  <div class="thumbnail-classic-button-wrap">
+                    <div class="thumbnail-classic-button"><a class="button button-gray-6 button-zakaria fl-bigmug-line-search74" href="images/masonry-gallery-2-1200x800-original.jpg" data-lightgallery="item"><img src="images/masonry-gallery-2-270x530.jpg" alt="" width="270" height="530"/></a></div>
+                    <div class="thumbnail-classic-button"><a class="button button-primary button-zakaria fl-bigmug-line-shopping202" href="cart-page.html"></a></div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-3 isotope-item" data-filter="Type 1">
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail-classic block-1">
+              <div class="thumbnail-classic-figure"><img src="images/masonry-gallery-3-270x250.jpg" alt="" width="270" height="250"/>
+              </div>
+              <div class="thumbnail-classic-caption">
+                <div>
+                  <h5 class="thumbnail-classic-title"><a href="single-product.html">Lemons</a></h5>
+                  <div class="thumbnail-classic-price">$10.99</div>
+                  <div class="thumbnail-classic-button-wrap">
+                    <div class="thumbnail-classic-button"><a class="button button-gray-6 button-zakaria fl-bigmug-line-search74" href="images/masonry-gallery-3-1200x800-original.jpg" data-lightgallery="item"><img src="images/masonry-gallery-3-270x250.jpg" alt="" width="270" height="250"/></a></div>
+                    <div class="thumbnail-classic-button"><a class="button button-primary button-zakaria fl-bigmug-line-shopping202" href="cart-page.html"></a></div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-3 isotope-item" data-filter="Type 2">
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail-classic block-1">
+              <div class="thumbnail-classic-figure"><img src="images/masonry-gallery-4-270x250.jpg" alt="" width="270" height="250"/>
+              </div>
+              <div class="thumbnail-classic-caption">
+                <div>
+                  <h5 class="thumbnail-classic-title"><a href="single-product.html">Avocados</a></h5>
+                  <div class="thumbnail-classic-price">$8.99</div>
+                  <div class="thumbnail-classic-button-wrap">
+                    <div class="thumbnail-classic-button"><a class="button button-gray-6 button-zakaria fl-bigmug-line-search74" href="images/masonry-gallery-4-1200x800-original.jpg" data-lightgallery="item"><img src="images/masonry-gallery-4-270x250.jpg" alt="" width="270" height="250"/></a></div>
+                    <div class="thumbnail-classic-button"><a class="button button-primary button-zakaria fl-bigmug-line-shopping202" href="cart-page.html"></a></div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-3 isotope-item" data-filter="Type 1">
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail-classic block-1">
+              <div class="thumbnail-classic-figure"><img src="images/masonry-gallery-5-270x250.jpg" alt="" width="270" height="250"/>
+              </div>
+              <div class="thumbnail-classic-caption">
+                <div>
+                  <h5 class="thumbnail-classic-title"><a href="single-product.html">Strawberries</a></h5>
+                  <div class="thumbnail-classic-price">$14.99</div>
+                  <div class="thumbnail-classic-button-wrap">
+                    <div class="thumbnail-classic-button"><a class="button button-gray-6 button-zakaria fl-bigmug-line-search74" href="images/grid-gallery-2-1200x800-original.jpg" data-lightgallery="item"><img src="images/masonry-gallery-5-270x250.jpg" alt="" width="270" height="250"/></a></div>
+                    <div class="thumbnail-classic-button"><a class="button button-primary button-zakaria fl-bigmug-line-shopping202" href="cart-page.html"></a></div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-6 isotope-item" data-filter="Type 2">
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail-classic block-1">
+              <div class="thumbnail-classic-figure"><img src="images/masonry-gallery-6-570x530.jpg" alt="" width="570" height="530"/>
+              </div>
+              <div class="thumbnail-classic-caption">
+                <div>
+                  <h5 class="thumbnail-classic-title"><a href="single-product.html">Sorrel</a></h5>
+                  <div class="thumbnail-classic-price">$16.99</div>
+                  <div class="thumbnail-classic-button-wrap">
+                    <div class="thumbnail-classic-button"><a class="button button-gray-6 button-zakaria fl-bigmug-line-search74" href="images/grid-gallery-6-1200x800-original.jpg" data-lightgallery="item"><img src="images/masonry-gallery-6-570x530.jpg" alt="" width="570" height="530"/></a></div>
+                    <div class="thumbnail-classic-button"><a class="button button-primary button-zakaria fl-bigmug-line-shopping202" href="cart-page.html"></a></div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-lg-8 col-xl-6 isotope-item" data-filter="Type 2">
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail-classic block-1">
+              <div class="thumbnail-classic-figure"><img src="images/masonry-gallery-7-570x250.jpg" alt="" width="570" height="250"/>
+              </div>
+              <div class="thumbnail-classic-caption">
+                <div>
+                  <h5 class="thumbnail-classic-title"><a href="single-product.html">Almonds</a></h5>
+                  <div class="thumbnail-classic-price">$10.99</div>
+                  <div class="thumbnail-classic-button-wrap">
+                    <div class="thumbnail-classic-button"><a class="button button-gray-6 button-zakaria fl-bigmug-line-search74" href="images/grid-gallery-1-1200x800-original.jpg" data-lightgallery="item"><img src="images/masonry-gallery-7-570x250.jpg" alt="" width="570" height="250"/></a></div>
+                    <div class="thumbnail-classic-button"><a class="button button-primary button-zakaria fl-bigmug-line-shopping202" href="cart-page.html"></a></div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 {% endblock %}

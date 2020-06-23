@@ -100,3 +100,14 @@ def search(request):
 
 def order(request):
     return render(request, 'order_success.html', {'order':Order.objects.all().first()})
+
+
+def contact(request):
+    if request.method == 'POST':
+        name = request.POST['name']
+        email = request.POST['email']
+        phone = request.POST['phone']
+        message = request.POST['message']
+        messages.success(request, 'تم ارسال رسالتك بنجاح ')
+        return render(request, 'contact-us.html')
+    return render(request, 'contact-us.html')
