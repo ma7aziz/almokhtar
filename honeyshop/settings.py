@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 's3xxd2x-8)z(-mz6geec2ii6*sd3v#crx^gs7ew@u=faa37i=2'
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -76,7 +77,7 @@ WSGI_APPLICATION = 'honeyshop.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 if DEBUG:
-
+    SECRET_KEY = 's3xxd2x-8)z(-mz6geec2ii6*sd3v#crx^gs7ew@u=faa37i=2'
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
@@ -84,16 +85,22 @@ if DEBUG:
         }
     }
 else:
+    SECRET_KEY = config('SECRET_KEY')
     DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'almokhtar',
-        'USER': 'almokhtar',
-        'PASSWORD': 'almokhtar123',
-        'HOST': 'localhost',
-        'PORT': '',
+    'default': dj_database_url.config(
+        default=config('DATABASE_URL')
+    )
     }
-}
+#     DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'almokhtar',
+#         'USER': 'almokhtar',
+#         'PASSWORD': 'almokhtar123',
+#         'HOST': 'localhost',
+#         'PORT': '',
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators

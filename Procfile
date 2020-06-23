@@ -1,0 +1,1 @@
+web: gunicorn honeyshop.wsgi --log-file -
