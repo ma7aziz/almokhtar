@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<section class="section section-sm bg-default text-md-center">
+    <div class="container">
+        <h3 class="font-weight-medium">تفاصيل الطلب</h3>
+        <div class="table-custom-responsive">
+            <table class="table-custom text-right">
+                <thead>
+                    <tr>
+                        <th>المنتج</th>
+                        <th>السعر</th>
+                        <th>الكمية</th>
+                        <th>الاجمالي</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for i in order.cart.cart_item_set.all%}
+                    <tr>
+
+                        <td>
+                            <a class="table-cart-link" href="/product/{{i.item.id}}">{{i}}</a>
+                        </td>
+                        <td>{{i.item.price}}</td>
+                        <td>
+                            {{i.qty}}
+                        </td>
+                        <td>{{i.total_price}}</td>
+                    </tr>
+                    {% endfor %}
+                    <div class="col-md-10 col-lg-6">
+                        <!-- <h3 class="font-weight-medium">Cart total</h3> -->
+                        <div class="table-custom-responsive">
+                            <table class="table-custom table-custom-primary table-checkout">
+                                <tbody>
+                                    <!-- <tr>
+                                        <td>أجمالي المنتجات</td>
+                                        <td>{{cart.cart_price}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>خدمة التوصيل</td>
+                                        <td>Free</td>
+                                    </tr> -->
+                                    <tr dir="rtl">
+                                        <td>الأجمالي</td>
+                                        <td>{{order.price}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+<section style="margin-bottom: 25px;">
+    <h3 class="font-weight-medium">بيانات التوصيل</h3>
+    <div class="col-12 ">
+        <!-- <h3 class="font-weight-medium">Cart total</h3> -->
+        <div class="table-custom-responsive" dir="rtl">
+            <table class="table-custom table-custom-primary table-checkout">
+                <tbody>
+                    <tr>
+                        <td>الاسم</td>
+                        <td>{{order.customer.name}}</td>
+                    </tr>
+                    <tr>
+                        <td>رقم التليفون</td>
+                        <td>{{order.customer.phone}}</td>
+                    </tr>
+                    <tr>
+                        <td>الايميل</td>
+                        <td>{{order.customer.email}}</td>
+                    </tr>
+                    <tr>
+                        <td>عنوان التوصيل</td>
+                        <td>{{order.customer.address}} ,
+                            {{order.customer.city}}
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ملاحظات اخري</td>
+                        <td>{{order.notes}}
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>وقت الطلب</td>
+                        <td>{{order.timestamp}}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+{% endblock %}

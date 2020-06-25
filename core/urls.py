@@ -12,5 +12,7 @@ urlpatterns = [
     path('place_order', views.place_order, name='place_order'),
     path('search', views.search, name='search'),
     path('order', views.order),
-    path('contact', views.contact, name='contact')
+    path('contact', views.contact, name='contact'),
+    path('orders', views.orders, name = 'orders'),
+    path('order/<int:id>',views.order_details, name = 'order_details')
 ]

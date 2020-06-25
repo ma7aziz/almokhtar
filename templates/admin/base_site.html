@@ -1,0 +1,17 @@
+{% extends 'admin/base.html' %}
+{%load static %}
+{% block branding %}
+<h1 id="head">
+    <!-- <img src="{% static 'img/logo.svg' %}" alt="BT Real Estate" width="80" height="50px"> -->
+    Neverland EGY Admin Area
+</h1>
+
+
+{% endblock %}
+
+{% block nav-global %}
+    <a href="{%url 'orders' %}" class="orders-tab" style="background-color: crimson; padding: 10px">Orders</a>
+{% endblock %}
+{% block extrastyle %}
+    <link rel="stylesheet" href="{% static 'css/admin.css' %}">
+{% endblock %}

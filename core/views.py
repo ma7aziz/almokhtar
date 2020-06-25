@@ -3,6 +3,7 @@ from .models import Product, Cart, Cart_item , Customer, Order
 from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 from django.contrib import messages
 from django.core.paginator import Paginator
+from django.contrib.auth.decorators import user_passes_test
 # Create your views here.
 
 
@@ -114,3 +115,21 @@ def contact(request):
         messages.success(request, 'تم ارسال رسالتك بنجاح ')
         return render(request, 'contact-us.html')
     return render(request, 'contact-us.html')
+
+
+@user_passes_test(lambda u: u.is_superuser)
+def orders(request):
+    orders = Order.objects.all().order_by('-timestamp')
+    paginator = Paginator(orders, 15 )
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+    return render(request, 'orders.html' , 
+        {'page_obj': page_obj}
+    )
+
+
+
+@user_passes_test(lambda u: u.is_superuser)
+def order_details(request, id):
+    order = Order.objects.get(pk=id)
+    return render(request, 'order_details.html' , {'order': order})
