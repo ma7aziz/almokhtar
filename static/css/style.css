@@ -340,7 +340,7 @@ html p a:hover {
     text-decoration: none
 }
 @import url('http://fonts.googleapis.com/earlyaccess/scheherazade.css');
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@400;600;700;900&display=swap');
 
 body {
     text-align: center;
@@ -348,8 +348,8 @@ body {
     line-height: 1.6;
     font-weight: 400;
     letter-spacing: .05em;
-    /* font-family: 'Cairo', lato, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif; */
-    font-family:  'Cairo', Arial, sans-serif;
+    /* font-family: 'Almarai', lato, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif; */
+    font-family:  'Almarai', Arial, sans-serif;
     color: #777;
     background-color: #fff;
     -webkit-text-size-adjust: none;
@@ -366,7 +366,7 @@ h6,
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 500;
-    font-family: 'Cairo',  Arial, sans-serif;;
+    font-family: 'Almarai',  Arial, sans-serif;;
     
     letter-spacing: .05em;
     text-transform: uppercase;
@@ -726,7 +726,7 @@ a[href*=mailto] {
     font-weight: 600;
     letter-spacing: .13em;
     text-transform: uppercase;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
 }
 
 .link-tag,
@@ -751,7 +751,7 @@ a[href*=mailto] {
     font-weight: 600;
     letter-spacing: .05em;
     text-transform: uppercase;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     transition: all .25s ease
 }
 
@@ -1030,7 +1030,7 @@ a[href*=mailto] {
     line-height: 1;
     font-weight: 600;
     letter-spacing: 0;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     color: rgba(21, 21, 21, .05)
 }
 
@@ -1545,7 +1545,7 @@ a[href*=mailto] {
     font-weight: 600;
     letter-spacing: .13em;
     text-transform: uppercase;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
 }
 
 .box-comment-reply,
@@ -1787,7 +1787,7 @@ a[href*=mailto] {
     font-weight: 600;
     letter-spacing: .05em;
     text-transform: uppercase;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     transition: transform .25s ease, color .25s ease-in-out
 }
 
@@ -1951,7 +1951,7 @@ a[href*=mailto] {
 .box-info-renee-subtitle {
     font-weight: 600;
     letter-spacing: .1em;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
 }
 
 .box-info-renee-title {
@@ -2075,7 +2075,7 @@ a[href*=mailto] {
 .box-info-rose-text,
 .box-info-rose-author {
     letter-spacing: .075em;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
 }
 
 .box-info-rose-title+.unit {
@@ -2137,7 +2137,7 @@ a[href*=mailto] {
     font-weight: 700;
     letter-spacing: .2em;
     text-transform: uppercase;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     color: #EB6D2F
 }
 
@@ -2994,7 +2994,7 @@ img {
     font-weight: 700;
     letter-spacing: .1em;
     text-transform: uppercase;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     color: #151515;
     background: #f5f5f5
 }
@@ -3013,7 +3013,7 @@ img {
     font-weight: 400;
     letter-spacing: .05em;
     background: #fff;
-    font-family: 'Cairo', lato, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', lato, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     color: #777;
     min-width: 170px
 }
@@ -3161,7 +3161,7 @@ h5+.table-custom-responsive {
     min-width: auto;
     font-size: 16px;
     letter-spacing: .075em;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     color: #151515
 }
 
@@ -3265,7 +3265,7 @@ h5+.table-custom-responsive {
     font-size: 16px;
     letter-spacing: .05em;
     color: #151515;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
 }
 
 .table-checkout td:first-child {
@@ -3361,7 +3361,7 @@ hr {
     line-height: 2;
     border: 2px solid;
     border-radius: 6px;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     font-weight: 700;
     letter-spacing: .1em;
     text-transform: uppercase;
@@ -4023,7 +4023,7 @@ hr {
 
 .btn-primary {
     border-radius: 3px;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     font-weight: 700;
     letter-spacing: .05em;
     text-transform: uppercase;
@@ -4206,7 +4206,7 @@ input:-webkit-autofill~.form-validation {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: .1em;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     color: #151515;
     background-color: transparent;
     background-image: none;
@@ -4260,7 +4260,7 @@ textarea.textarea-lg {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: .1em;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     transform: translateY(-50%);
     will-change: transform;
     pointer-events: none;
@@ -4456,7 +4456,7 @@ textarea.textarea-lg {
     font-size: 15px;
     line-height: 1.72;
     letter-spacing: .025em;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     color: #9b9b9b;
     cursor: pointer
 }
@@ -4479,7 +4479,7 @@ textarea.textarea-lg {
 .radio-inline .radio-custom::after,
 .radio-inline .radio-custom-dummy::after {
     content: '\f222';
-    font-family: 'Cairo', material design icons;
+    font-family: 'Almarai', material design icons;
     position: absolute;
     top: 0;
     left: 0;
@@ -4496,7 +4496,7 @@ textarea.textarea-lg {
     font-size: 15px;
     line-height: 1.72;
     letter-spacing: .025em;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     color: #9b9b9b;
     cursor: pointer
 }
@@ -4519,7 +4519,7 @@ textarea.textarea-lg {
 .checkbox-inline .checkbox-custom::after,
 .checkbox-inline .checkbox-custom-dummy::after {
     content: '\f222';
-    font-family: 'Cairo', material design icons;
+    font-family: 'Almarai', material design icons;
     position: absolute;
     top: 0;
     left: 0;
@@ -4745,7 +4745,7 @@ textarea.textarea-lg {
     font-size: 15px;
     font-weight: 400;
     letter-spacing: .05em;
-    font-family: 'Cairo', lato, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
+    font-family: 'Almarai', lato, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
 }
 
 .rd-form-coupon .form-input {
@@ -4984,7 +4984,7 @@ textarea.textarea-lg {
     font-weight: 500;
     letter-spacing: .05em;
     text-transform: uppercase;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     z-index: 1
 }
 
@@ -5043,7 +5043,7 @@ textarea.textarea-lg {
     font-weight: 500;
     letter-spacing: .1em;
     text-transform: uppercase;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
 }
 
 .post-modern-link:hover {
@@ -5186,7 +5186,7 @@ textarea.textarea-lg {
     font-weight: 500;
     letter-spacing: .05em;
     text-transform: uppercase;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     z-index: 1
 }
 
@@ -5340,7 +5340,7 @@ textarea.textarea-lg {
 .post-nikki-title {
     font-weight: 400;
     letter-spacing: .05em;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
 }
 
 *+.post-nikki-title {
@@ -5467,7 +5467,7 @@ textarea.textarea-lg {
     padding-top: 40px;
     font-weight: 400;
     letter-spacing: .05em;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
 }
 
 .quote-classic-text::before {
@@ -5480,7 +5480,7 @@ textarea.textarea-lg {
     font-weight: 700;
     font-style: normal;
     letter-spacing: 0;
-    font-family: 'Cairo', kalam, cursive;
+    font-family: 'Almarai', kalam, cursive;
     color: rgba(60, 195, 193, .22);
     transform: translate3d(-50%, 0, 0)
 }
@@ -5491,7 +5491,7 @@ textarea.textarea-lg {
     font-weight: 600;
     letter-spacing: .1em;
     text-transform: uppercase;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     color: #EB6D2F;
     border-top: 1px solid #e1e1e1
 }
@@ -5574,7 +5574,7 @@ textarea.textarea-lg {
     font-weight: 700;
     font-style: normal;
     letter-spacing: 0;
-    font-family: 'Cairo', kalam, cursive;
+    font-family: 'Almarai', kalam, cursive;
     color: rgba(60, 195, 193, .22);
     transform: translate3d(-50%, 0, 0)
 }
@@ -5637,7 +5637,7 @@ textarea.textarea-lg {
     line-height: 1.44;
     font-weight: 400;
     letter-spacing: .02em;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
 }
 
 .quote-modern-text::before {
@@ -5650,7 +5650,7 @@ textarea.textarea-lg {
     font-weight: 700;
     font-style: normal;
     letter-spacing: 0;
-    font-family: 'Cairo', kalam, cursive;
+    font-family: 'Almarai', kalam, cursive;
     color: rgba(60, 195, 193, .22);
     transform: translate3d(-50%, 0, 0)
 }
@@ -5664,7 +5664,7 @@ textarea.textarea-lg {
     font-weight: 600;
     letter-spacing: .1em;
     text-transform: uppercase;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     color: #151515
 }
 
@@ -5728,7 +5728,7 @@ textarea.textarea-lg {
     line-height: 2;
     font-weight: 400;
     letter-spacing: .05em;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     color: #151515
 }
 
@@ -5752,7 +5752,7 @@ textarea.textarea-lg {
     font-weight: 600;
     letter-spacing: .1em;
     text-transform: uppercase;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     color: #EB6D2F
 }
 
@@ -5802,7 +5802,7 @@ textarea.textarea-lg {
     line-height: 2;
     font-weight: 400;
     letter-spacing: .02em;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
 }
 
 .quote-minimal-figure img {
@@ -5814,7 +5814,7 @@ textarea.textarea-lg {
     font-weight: 600;
     letter-spacing: .1em;
     text-transform: uppercase;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     color: #151515
 }
 
@@ -5851,7 +5851,7 @@ textarea.textarea-lg {
     line-height: 1.45;
     font-weight: 400;
     letter-spacing: .02em;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
 }
 
 .quote-carly-text::before {
@@ -5864,7 +5864,7 @@ textarea.textarea-lg {
     font-weight: 700;
     font-style: normal;
     letter-spacing: 0;
-    font-family: 'Cairo', kalam, cursive;
+    font-family: 'Almarai', kalam, cursive;
     color: rgba(60, 195, 193, .22);
     transform: translate3d(-50%, 0, 0)
 }
@@ -5878,7 +5878,7 @@ textarea.textarea-lg {
     font-weight: 600;
     letter-spacing: .1em;
     text-transform: uppercase;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     color: #151515
 }
 
@@ -6261,7 +6261,7 @@ textarea.textarea-lg {
     line-height: 2;
     font-weight: 600;
     letter-spacing: .13em;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     text-transform: uppercase
 }
 
@@ -6273,7 +6273,7 @@ textarea.textarea-lg {
     right: 0;
     font-size: 14px;
     line-height: 1.72;
-    font-family: 'Cairo', material design icons;
+    font-family: 'Almarai', material design icons;
     color: #151515;
     transform: translate3d(50%, -50%, 0)
 }
@@ -6354,7 +6354,7 @@ textarea.textarea-lg {
     line-height: 1.33333;
     font-weight: 500;
     letter-spacing: 0;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     transition: all .25s ease-in-out
 }
 
@@ -6397,7 +6397,7 @@ textarea.textarea-lg {
 }
 
 .page-item-control .icon::before {
-    font-family: 'Cairo', material design icons;
+    font-family: 'Almarai', material design icons;
     font-size: 24px;
     line-height: 24px
 }
@@ -6890,7 +6890,7 @@ textarea.textarea-lg {
     font-weight: 600;
     letter-spacing: .1em;
     text-transform: uppercase;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     color: #151515
 }
 
@@ -7304,7 +7304,7 @@ textarea.textarea-lg {
     font-weight: 600;
     letter-spacing: .02em;
     text-transform: uppercase;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     border-radius: 6px;
     color: #fff;
     z-index: 1
@@ -7736,7 +7736,7 @@ textarea.textarea-lg {
 .product-dawn-price {
     line-height: 1.2;
     letter-spacing: .025em;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
 }
 
 *+.product-dawn-price {
@@ -7958,7 +7958,7 @@ textarea.textarea-lg {
     font-size: 15px;
     line-height: 1.6;
     letter-spacing: .1em;
-    font-family: 'Cairo', lato, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', lato, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     color: #151515
 }
 
@@ -8034,7 +8034,7 @@ textarea.textarea-lg {
     line-height: 1;
     font-weight: 500;
     letter-spacing: .05em;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     color: #EB6D2F
 }
 
@@ -8102,7 +8102,7 @@ textarea.textarea-lg {
     font-weight: 500;
     letter-spacing: .1em;
     text-transform: uppercase;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     color: #151515
 }
 
@@ -8369,7 +8369,7 @@ textarea.textarea-lg {
 .promo-classic-title {
     letter-spacing: .05em;
     text-transform: none;
-    font-family: 'Cairo', kalam, cursive;
+    font-family: 'Almarai', kalam, cursive;
     color: #EB6D2F
 }
 
@@ -8377,7 +8377,7 @@ textarea.textarea-lg {
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
 }
 
 .promo-classic-title+.promo-classic-text {
@@ -8669,7 +8669,7 @@ textarea.textarea-lg {
     font-size: 18px;
     line-height: 1.2;
     letter-spacing: .025em;
-    font-family: 'Cairo', kalam, cursive;
+    font-family: 'Almarai', kalam, cursive;
     color: #a3a3a3
 }
 
@@ -8684,7 +8684,7 @@ textarea.textarea-lg {
     font-weight: 600;
     letter-spacing: .1em;
     text-transform: uppercase;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     color: #EB6D2F
 }
 
@@ -8897,7 +8897,7 @@ textarea.textarea-lg {
     font-weight: 600;
     letter-spacing: .05em;
     text-transform: uppercase;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     color: #151515
 }
 
@@ -9085,7 +9085,7 @@ html:not(.ie-10):not(.ie-11):not(.ie-edge) .team-karen-header svg {
 .event-classic-date {
     font-weight: 600;
     letter-spacing: .02em;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
 }
 
 .event-classic-month {
@@ -9375,15 +9375,15 @@ html.boxed body {
 }
 
 .font-family-sans-serif {
-    font-family: 'Cairo', lato, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
+    font-family: 'Almarai', lato, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
 }
 
 .font-family-sans-serif-1 {
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
 }
 
 .font-family-cursive {
-    font-family: 'Cairo', kalam, cursive
+    font-family: 'Almarai', kalam, cursive
 }
 
 *+p {
@@ -10561,7 +10561,7 @@ html [class*=section-].section-top-0 {
 p.rights {
     letter-spacing: 0;
     color: #777;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
 }
 
 p.rights a,
@@ -10736,7 +10736,7 @@ p.rights a:hover {
     font-weight: 500;
     line-height: 1;
     letter-spacing: .05em;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     color: rgba(255, 255, 255, .14);
     animation: titleColor 3s linear infinite
 }
@@ -10772,7 +10772,7 @@ p.rights a:hover {
 .title-style-1 {
     letter-spacing: .05em;
     text-transform: none;
-    font-family: 'Cairo', kalam, cursive;
+    font-family: 'Almarai', kalam, cursive;
     color: #EB6D2F
 }
 
@@ -10799,7 +10799,7 @@ p.rights a:hover {
 
 .title-style-6 {
     letter-spacing: .02em;
-    font-family: 'Cairo', kalam, cursive;
+    font-family: 'Almarai', kalam, cursive;
     color: #EB6D2F
 }
 
@@ -10807,7 +10807,7 @@ p.rights a:hover {
     font-weight: 700;
     letter-spacing: .075em;
     text-transform: none;
-    font-family: 'Cairo', kalam, cursive;
+    font-family: 'Almarai', kalam, cursive;
     color: #EB6D2F
 }
 
@@ -11874,7 +11874,7 @@ html.tablet .ui-to-top {
 .rd-navbar-static .rd-nav-item>.rd-navbar-submenu-toggle {
     display: none;
     margin-left: 4px;
-    font-family: 'Cairo', material design icons;
+    font-family: 'Almarai', material design icons;
     font-size: 16px;
     cursor: pointer
 }
@@ -11906,7 +11906,7 @@ html.tablet .ui-to-top {
     font-weight: 600;
     letter-spacing: .1em;
     text-transform: uppercase;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     color: #151515;
     transition: all .25s ease-in-out
 }
@@ -12010,7 +12010,7 @@ html.tablet .ui-to-top {
     font-weight: 400;
     letter-spacing: .1em;
     text-transform: uppercase;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     color: #151515;
     transition: all .25s ease-in-out
 }
@@ -12118,7 +12118,7 @@ html.tablet .ui-to-top {
     font-weight: 600;
     letter-spacing: .1em;
     text-transform: uppercase;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
 }
 
 @media(min-width:1200px) {
@@ -12227,7 +12227,7 @@ html.tablet .ui-to-top {
     transform: rotate(0deg) scale(1);
     opacity: 1;
     visibility: visible;
-    font-family: 'Cairo', fl-bigmug-line
+    font-family: 'Almarai', fl-bigmug-line
 }
 
 .rd-navbar-static .rd-navbar-search-toggle span::after {
@@ -12235,7 +12235,7 @@ html.tablet .ui-to-top {
     transform: rotate(-90deg) scale(.4);
     opacity: 0;
     visibility: hidden;
-    font-family: 'Cairo', fl-bigmug-line
+    font-family: 'Almarai', fl-bigmug-line
 }
 
 .rd-navbar-static .rd-navbar-search-toggle.active span::before {
@@ -12471,7 +12471,7 @@ html.tablet .ui-to-top {
 .rd-navbar-static .rd-navbar-search-2 .search-submit {
     display: inline-block;
     padding: 10px 30px;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
 }
 
 .rd-navbar-static .rd-navbar-search-2 *+.rd-search-results-live {
@@ -12643,7 +12643,7 @@ html.tablet .ui-to-top {
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 0;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     color: #EB6D2F
 }
 
@@ -12762,7 +12762,7 @@ html.tablet .ui-to-top {
     font-weight: 600;
     letter-spacing: .1em;
     text-transform: uppercase;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
 }
 
 .rd-navbar-fixed li.opened>.rd-navbar-dropdown {
@@ -12874,7 +12874,7 @@ html.tablet .ui-to-top {
     font-weight: 600;
     letter-spacing: .1em;
     text-transform: uppercase;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
 }
 
 .rd-navbar-fixed .rd-navbar-submenu-toggle {
@@ -13018,7 +13018,7 @@ html.tablet .ui-to-top {
     transform: rotate(0deg) scale(1);
     opacity: 1;
     visibility: visible;
-    font-family: 'Cairo', material design icons
+    font-family: 'Almarai', material design icons
 }
 
 .rd-navbar-fixed .rd-navbar-search-toggle span::after {
@@ -13026,7 +13026,7 @@ html.tablet .ui-to-top {
     transform: rotate(-90deg) scale(.4);
     opacity: 0;
     visibility: hidden;
-    font-family: 'Cairo', material design icons
+    font-family: 'Almarai', material design icons
 }
 
 .rd-navbar-fixed .rd-navbar-search-toggle.active span::before {
@@ -13071,7 +13071,7 @@ html.tablet .ui-to-top {
     transform: rotate(0deg) scale(1);
     opacity: 1;
     visibility: visible;
-    font-family: 'Cairo', fl-bigmug-line
+    font-family: 'Almarai', fl-bigmug-line
 }
 
 .rd-navbar-fixed .rd-navbar-search-toggle span::after {
@@ -13079,7 +13079,7 @@ html.tablet .ui-to-top {
     transform: rotate(-90deg) scale(.4);
     opacity: 0;
     visibility: hidden;
-    font-family: 'Cairo', fl-bigmug-line
+    font-family: 'Almarai', fl-bigmug-line
 }
 
 .rd-navbar-fixed .rd-navbar-search-toggle.active span::before {
@@ -13830,8 +13830,8 @@ html.rd-navbar-fixed-linked .page {
 }
 
 .rd-navbar-creative.rd-navbar-static .rd-navbar-brand img {
-    max-width: 117px;
-    max-height: 42px
+    max-width: 217px;
+    max-height: 150px
 }
 
 .rd-navbar-creative.rd-navbar-static.rd-navbar--is-stuck,
@@ -13936,6 +13936,8 @@ html.rd-navbar-fixed-linked .page {
 .bg-brown-1 .rd-navbar-creative-2.rd-navbar-static.rd-navbar--is-clone,
 .bg-primary .rd-navbar-creative-2.rd-navbar-static.rd-navbar--is-clone {
     background: linear-gradient(to right, #5a3733 0%, #eb6d2f 100%)
+    
+    
 }
 
 .context-dark .rd-navbar-creative-2.rd-navbar-static.rd-navbar--is-stuck::before,
@@ -13993,7 +13995,7 @@ html.rd-navbar-fixed-linked .page {
     font-size: 12px;
     line-height: 2;
     letter-spacing: .1em;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     color: #fff;
     background: #4d4e50;
     border-bottom: 6px solid #838996
@@ -14461,7 +14463,7 @@ html.rd-navbar-fixed-linked .page {
     line-height: 1.8;
     font-weight: 600;
     letter-spacing: .05em;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     color: #fff;
     background: rgba(255, 255, 255, .22);
     transition: all .2s ease;
@@ -15082,7 +15084,7 @@ html.rd-navbar-fixed-linked .page {
 
 .swiper-slider-1 .swiper-title-3 {
     letter-spacing: .05em;
-    font-family: 'Cairo', kalam, cursive;
+    font-family: 'Almarai', kalam, cursive;
     text-transform: none
 }
 
@@ -15143,7 +15145,7 @@ html.rd-navbar-fixed-linked .page {
 
 .swiper-slider-2 .swiper-text {
     letter-spacing: .075em;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
 }
 
 .swiper-slider-2 *+.swiper-text {
@@ -15225,7 +15227,7 @@ html.rd-navbar-fixed-linked .page {
 
 .swiper-slider-3 .swiper-text {
     letter-spacing: .075em;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
 }
 
 .swiper-slider-3.swiper-container-horizontal>.swiper-pagination-bullets {
@@ -15734,7 +15736,7 @@ html.rd-navbar-fixed-linked .page {
 .rd-search-results-live .search-quick-result {
     padding-left: 15px;
     padding-right: 15px;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     font-size: 14px;
     font-weight: 700;
     line-height: 30px;
@@ -15765,7 +15767,7 @@ html.rd-navbar-fixed-linked .page {
 
 .rd-search-results-live .search-title {
     position: relative;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     font-size: 14px;
     font-weight: 700;
     color: #EB6D2F
@@ -15782,7 +15784,7 @@ html.rd-navbar-fixed-linked .page {
     overflow: hidden;
     display: block;
     padding: 8px;
-    font-family: 'Cairo', lato, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', lato, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: .1em;
@@ -15859,7 +15861,7 @@ html.rd-navbar-fixed-linked .page {
     font-size: 16px;
     line-height: 1.2;
     font-weight: 500;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     color: #5A3733
 }
 
@@ -16053,7 +16055,7 @@ html.rd-navbar-fixed-linked .page {
     padding-left: 20px;
     padding-right: 56px;
     letter-spacing: .05em;
-    font-family: 'Cairo', lato, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', lato, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     color: #777
 }
 
@@ -16165,7 +16167,7 @@ html.rd-navbar-fixed-linked .page {
     line-height: 1;
     font-weight: 600;
     letter-spacing: .02em;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     text-transform: uppercase;
     color: #9b9b9b
 }
@@ -16311,7 +16313,7 @@ html.rd-navbar-fixed-linked .page {
     margin: 0;
     border: 0;
     border-radius: 0;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     color: #9b9b9b
 }
 
@@ -16677,7 +16679,7 @@ html.rd-navbar-fixed-linked .page {
     font-weight: 600;
     letter-spacing: .1em;
     text-transform: uppercase;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     color: rgba(21, 21, 21, .41);
     background: 0 0;
     border: none
@@ -16902,7 +16904,7 @@ h3+.card-group-corporate {
     line-height: 1.6;
     font-weight: 500;
     letter-spacing: .02em;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     color: #151515;
     border-bottom: 1px solid #e1e1e1;
     z-index: 1
@@ -16941,7 +16943,7 @@ h3+.card-group-corporate {
 
 .card-corporate .card-arrow .icon::before {
     content: '\f238';
-    font-family: 'Cairo', material design icons
+    font-family: 'Almarai', material design icons
 }
 
 .card-corporate .collapse {
@@ -17196,7 +17198,7 @@ h3+.card-group-corporate {
     font-weight: 600;
     letter-spacing: .1em;
     text-transform: uppercase;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
 }
 
 .progress-header>* {
@@ -17481,7 +17483,7 @@ h3+.card-group-corporate {
     font-weight: 600;
     letter-spacing: .1em;
     text-transform: uppercase;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     color: rgba(21, 21, 21, .5)
 }
 
@@ -17671,7 +17673,7 @@ html:not(.ie-10):not(.ie-11):not(.ie-edge) .countdown-circle svg {
     line-height: 1.8;
     font-weight: 600;
     letter-spacing: .05em;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     color: #a3a3a3;
     transition: all .2s ease;
     transform: translate3d(0, -50%, 0);
@@ -18110,7 +18112,7 @@ html:not(.ie-10):not(.ie-11):not(.ie-edge) .countdown-circle svg {
 }
 
 @font-face {
-    font-family: 'Cairo', lg;
+    font-family: 'Almarai', lg;
     src: url(../fonts/lg.eot?n1z373);
     src: url(../fonts/lg.eot?#iefixn1z373) format("embedded-opentype"), url(../fonts/lg.woff?n1z373) format("woff"), url(../fonts/lg.ttf?n1z373) format("truetype"), url(../fonts/lg.svg?n1z373#lg) format("svg");
     font-weight: 400;
@@ -18118,7 +18120,7 @@ html:not(.ie-10):not(.ie-11):not(.ie-edge) .countdown-circle svg {
 }
 
 .lg-icon {
-    font-family: 'Cairo', lg;
+    font-family: 'Almarai', lg;
     speak: none;
     font-style: normal;
     font-weight: 400;
@@ -18899,7 +18901,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     display: block;
     white-space: pre;
     padding: 4px 12px;
-    font-family: 'Cairo', open sans, helvetica neue, Helvetica, Arial, sans-serif;
+    font-family: 'Almarai', open sans, helvetica neue, Helvetica, Arial, sans-serif;
     font-size: 12px
 }
 
@@ -19362,7 +19364,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
     font-size: 15px;
     line-height: 1;
     letter-spacing: .05em;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
 }
 
 .rd-range-title {
@@ -19586,7 +19588,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
     font-size: 14px;
     line-height: 1.72;
     letter-spacing: .05em;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     color: #151515;
     padding-right: 32px
 }
@@ -19613,7 +19615,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
     content: '\f236';
     font-size: 24px;
     font-weight: 400;
-    font-family: 'Cairo', material design icons;
+    font-family: 'Almarai', material design icons;
     transform: rotate(0deg)
 }
 
@@ -19809,7 +19811,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
     line-height: 21px;
     font-weight: 500;
     letter-spacing: 0;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif
 }
 
 .slick-slider {
@@ -19932,7 +19934,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
     line-height: 1.8;
     font-weight: 600;
     letter-spacing: .05em;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     color: #a3a3a3;
     background: 0 0;
     transition: all .2s ease;
@@ -20071,7 +20073,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 }
 
 .slick-nav-1 .slick-arrow::before {
-    font-family: 'Cairo', material design icons
+    font-family: 'Almarai', material design icons
 }
 
 .slick-nav-1 .slick-arrow::after {
@@ -20562,7 +20564,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
     width: 100%;
     padding: 10px 42px;
     font-weight: 500;
-    font-family: 'Cairo', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-family: 'Almarai', poppins, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
     text-align: center;
     -moz-appearance: textfield;
     background: #f5f5f5;
@@ -20583,7 +20585,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
     font-size: 14px;
     line-height: 38px;
     font-weight: 400;
-    font-family: 'Cairo', material design icons;
+    font-family: 'Almarai', material design icons;
     cursor: pointer;
     color: #151515;
     border-radius: 0;

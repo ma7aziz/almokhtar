@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -77,31 +77,31 @@ WSGI_APPLICATION = 'honeyshop.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-if DEBUG:
-    SECRET_KEY = 's3xxd2x-8)z(-mz6geec2ii6*sd3v#crx^gs7ew@u=faa37i=2'
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        }
-    }
-else:
-    SECRET_KEY = config('SECRET_KEY')
-    DATABASES = {
-    'default': dj_database_url.config(
-        default=config('DATABASE_URL')
-    )
-    }
+SECRET_KEY = 's3xxd2x-8)z(-mz6geec2ii6*sd3v#crx^gs7ew@u=faa37i=2'
+# if DEBUG:
 #     DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'almokhtar',
-#         'USER': 'almokhtar',
-#         'PASSWORD': 'almokhtar123',
-#         'HOST': 'localhost',
-#         'PORT': '',
+#         'default': {
+#             'ENGINE': 'django.db.backends.sqlite3',
+#             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#         }
 #     }
-# }
+# else:
+#     SECRET_KEY = config('SECRET_KEY')
+#     DATABASES = {
+#     'default': dj_database_url.config(
+#         default=config('DATABASE_URL')
+#     )
+#     }
+    DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'almokhtar',
+        'USER': 'almokhtar',
+        'PASSWORD': 'almokhtar123',
+        'HOST': 'localhost',
+        'PORT': '',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators

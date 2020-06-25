@@ -6,32 +6,43 @@
 <section class="section swiper-container swiper-slider swiper-slider-4" data-loop="true" data-autoplay="5000">
     <div class="swiper-wrapper context-dark">
         
-        <div class="swiper-slide swiper-slide-1" data-slide-bg="https://images.unsplash.com/photo-1555035900-54c17f3bc1eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=625&q=80">
+        <div class="swiper-slide swiper-slide-1" data-slide-bg="{% static 'images/slide-1.jpg'%}">
             <div class="swiper-slide-caption section-md text-center">
-                <div class="container">
-                    <h2 class="swiper-title-1" data-caption-animate="fadeInLeft" data-caption-delay="100">
-                        عسل النحل الطبيعي</h2>
-                    <h5 class="swiper-title-2" data-caption-animate="fadeInRight" data-caption-delay="250">With our wide
-                        variety of vegan & organic food products, we are sure <br class="d-none d-md-block">to help you
-                        make the right choice to start your day.
+                <div class="container" >
+                    <h2 class="swiper-title-1" data-caption-animate="fadeInLeft" data-caption-delay="100" style="color: #8F4A00">
+                        أهلا بكم في شركة المختار</h2>
+                    <h5 class="swiper-title-2" data-caption-animate="fadeInRight" data-caption-delay="250" style="color: #8a643d;">الموزع الحصري لمناحل أل شاهين  <br class="d-none d-md-block">
+                        
                     </h5>
                     <div class="button-wrap" data-caption-animate="fadeInUp" data-caption-delay="400"><a
-                            class="button button-lg button-shadow-5 button-default-outline button-zakaria"
-                            href="{%url 'shop' %}">منتجاتنا</a></div>
+                            class="button button-lg  button-shadow-5  button-zakaria"
+                            href="{%url 'shop' %}" >منتجاتنا</a></div>
                 </div>
             </div>
         </div>
-        <div class="swiper-slide swiper-slide-2" data-slide-bg="https://images.unsplash.com/photo-1555035900-54c17f3bc1eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=625&q=80">
+        <div class="swiper-slide swiper-slide-2" data-slide-bg="{% static 'images/slide-1.jpg'%}">
             <div class="swiper-slide-caption section-md text-center">
                 <div class="container">
-                    <h2 class="swiper-title-1" data-caption-animate="fadeInLeft" data-caption-delay="100">
-                        عسل النحل الطبيعي</h2>
-                    <h5 class="swiper-title-2" data-caption-animate="fadeInRight" data-caption-delay="250">With our wide
-                        variety of vegan & organic food products, we are sure <br class="d-none d-md-block">to help you
-                        make the right choice to start your day.
+                    <h2 class="swiper-title-1" data-caption-animate="fadeInLeft" data-caption-delay="100" style="color: #8F4A00">
+                        هدفنا صحتك بمنتجاتنا الطبيعة</h2>
+                    <h5 class="swiper-title-2" data-caption-animate="fadeInRight" data-caption-delay="250" style="color: #8a643d;">متخصصون فى أجود أنواع العسل من مناحلنا الخاصه بمناحل أل شاهين<br>
+                        مساعدتك لتعيش حياة صحية طبيعيه عن طريق تقديم أفضل أنواع العسل من مناحلنا الخاصه
                     </h5>
                     <div class="button-wrap" data-caption-animate="fadeInUp" data-caption-delay="400"><a
-                            class="button button-lg button-shadow-5 button-default-outline button-zakaria"
+                            class="button button-lg button-shadow-5  button-zakaria"
+                            href="{%url 'shop' %}" >منتجاتنا</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide swiper-slide-2" data-slide-bg="{% static 'images/slide-1.jpg'%}">
+            <div class="swiper-slide-caption section-md text-center">
+                <div class="container">
+                    <h2 class="swiper-title-1" data-caption-animate="fadeInLeft" data-caption-delay="100" style="color: #8F4A00">
+                        الجوده والثقه هى أساسن</h2>
+                    <h5 class="swiper-title-2" data-caption-animate="fadeInRight" data-caption-delay="250" style="color: #8a643d;">هدفنا هو تقديم أفضل المنتجات لضمان الثقه مع عملائنا الكرام
+                    </h5>
+                    <div class="button-wrap" data-caption-animate="fadeInUp" data-caption-delay="400"><a
+                            class="button button-lg button-shadow-5  button-zakaria"
                             href="{%url 'shop' %}">منتجاتنا</a></div>
                 </div>
             </div>
@@ -109,9 +120,8 @@
                                     </div>
                                 </div>
                                 <div class="unit-body">
-                                    <h4 class="box-icon-classic-title"><a href="#">طبيعي 100%</a></h4>
-                                    <p class="box-icon-classic-text">We make our products from 100% organic and fresh
-                                        ingredients full of vitamins and nutrients.</p>
+                                    <h4 class="box-icon-classic-title"><a href="#" dir="rtl"> نصلك لحد بيتك</a></h4>
+                                    <p class="box-icon-classic-text">خدمه شحن على مدار ال 24 ساعه طوال أيام الاسبوع</p>
                                 </div>
                             </div>
                         </article>
@@ -217,9 +227,8 @@
                                     </div>
                                 </div>
                                 <div class="unit-body">
-                                    <h4 class="box-icon-classic-title"><a href="#">منتجات صحية</a></h4>
-                                    <p class="box-icon-classic-text">Our products are exceptionally good for boosting
-                                        your health and increasing your energy level.</p>
+                                    <h4 class="box-icon-classic-title"><a href="#" dir="rtl"> طبيعى 100%</a></h4>
+                                    <p class="box-icon-classic-text">عسل ال شاهين طبيعى 100% من غير أى مواد حافظه</p>
                                 </div>
                             </div>
                         </article>
@@ -316,9 +325,8 @@
                                     </div>
                                 </div>
                                 <div class="unit-body">
-                                    <h4 class="box-icon-classic-title"><a href="#">بدون أضافات</a></h4>
-                                    <p class="box-icon-classic-text">Our food products and drinks contain no artificial
-                                        additives, only vital elements that your body needs.</p>
+                                    <h4 class="box-icon-classic-title"><a href="#">عروض خاصة</a></h4>
+                                    <p class="box-icon-classic-text">عروض حصريه فقط من شركة المختار</p>
                                 </div>
                             </div>
                         </article>
@@ -424,9 +432,8 @@
                                     </div>
                                 </div>
                                 <div class="unit-body">
-                                    <h4 class="box-icon-classic-title"><a href="#">مزيد من الطاقة</a></h4>
-                                    <p class="box-icon-classic-text">We designed our products as the ultimately vegan
-                                        &amp; organic sources of energy for your everyday life.</p>
+                                    <h4 class="box-icon-classic-title"><a href="#">منتجات متنوعة</a></h4>
+                                    <p class="box-icon-classic-text">لدينا مجموعة متنوعة من أجود انواع العسل ومشتقاته</p>
                                 </div>
                             </div>
                         </article>
@@ -440,7 +447,7 @@
     <div class="container">
         <h2 class="text-transform-capitalize wow fadeScale">منتجاتنا </h2>
         <div class="row row-lg row-30 row-lg-50">
-            {% for pro in products %}
+            {% for pro in featured %}
             <div class="col-sm-6 col-md-4 col-lg-3">
                 <!-- Product-->
                 <article class="product wow fadeInRight">
@@ -479,47 +486,142 @@
             </div>
             {% endfor %}
         </div>
-        <a href="{%url 'shop'%}" class="button button-lg button-shadow-5 button-default-outline button-zakaria">جميع
-            المنتجات </a>
+        <div style="margin: 35px auto;">
+
+            <a href="{%url 'shop'%}" class="button button-lg button-shadow-5 button-default-outline button-zakaria">جميع
+                المنتجات </a>
+            </div>
+            
+            <div class="col-xl-12">
+                <div class="row row-30" dir="rtl">
+                  <div class="col-sm-6 col-lg-4 wow fadeInLeft" data-wow-delay=".2s">
+                    <article class="box-icon-creative">
+                      <div class="unit flex-column flex-md-row flex-lg-column flex-xl-row align-items-md-center align-items-lg-start align-items-xl-center">
+                        <div class="unit-left">
+                          <div class="box-icon-creative-icon fl-bigmug-line-big104"></div>
+                        </div>
+                        <div class="unit-body">
+                          <h5 class="box-icon-creative-title"><a href="#">خدمة توصيل </a></h5>
+                          <p class="box-icon-creative-text">خدمة توصيل 24 ساعة في جميع انحاء الجمهورية</p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 wow fadeInLeft" data-wow-delay=".1s">
+                    <article class="box-icon-creative">
+                      <div class="unit flex-column flex-md-row flex-lg-column flex-xl-row align-items-md-center align-items-lg-start align-items-xl-center">
+                        <div class="unit-left">
+                          <div class="box-icon-creative-icon fl-bigmug-line-chat55"></div>
+                        </div>
+                        <div class="unit-body">
+                          <h5 class="box-icon-creative-title"><a href="#">خدمة العملاء</a></h5>
+                          <p class="box-icon-creative-text">جاهزون دائما <br> لمساعدتك</p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 wow fadeInLeft">
+                    <article class="box-icon-creative">
+                      <div class="unit flex-column flex-md-row flex-lg-column flex-xl-row align-items-md-center align-items-lg-start align-items-xl-center">
+                        <div class="unit-left">
+                          <div class="box-icon-creative-icon fl-bigmug-line-like51"></div>
+                        </div>
+                        <div class="unit-body">
+                          <h5 class="box-icon-creative-title"><a href="#">صحي ومفيد</a></h5>
+                          <p class="box-icon-creative-text">منتجات أصلية للحفاظ علي صحتك </p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+    </div>
+</section>
+<!-- <section class="parallax-container" data-parallax-img="{% static 'images/paralex-image.jpeg'%}" > -->
+<section class="parallax-container" data-parallax-img="https://images.unsplash.com/photo-1570634433336-be7629414ce1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" >
+    <div class="parallax-content section-xxl context-dark">
+      <div class="container">
+        <div class="row row-30 justify-content-center">
+          
+          
+          <div class="col-6 col-sm-4">
+            <div class="counter-modern">
+              <h2 class="counter-modern-number"><span class="counter" >7</span>
+              </h2>
+              <div class="counter-modern-decor"></div>
+              <h5 class="counter-modern-title" >عروض<br class="d-none d-sm-block"> خاصة</h5>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4">
+            <div class="counter-modern">
+              <h2 class="counter-modern-number" ><span class="counter">1267</span>
+              </h2>
+              <div class="counter-modern-decor"></div>
+              <h5 class="counter-modern-title" >عملاء<br class="d-none d-sm-block">راضون</h5>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4">
+            <div class="counter-modern">
+              <h2 class="counter-modern-number" ><span class="counter">30</span>
+              </h2>
+              <div class="counter-modern-decor"></div>
+              <h5 class="counter-modern-title" >منتجات<br class="d-none d-sm-block"> عسل متنوعة</h5>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 </section>
 <section class="section section-xxl bg-image-1">
     <div class="container">
-      <h2 class="text-transform-capitalize wow fadeScale">What People Say</h2>
-      <div class="row row-sm row-30 justify-content-center">
+        <h2 class="text-transform-capitalize wow fadeScale">أراء عملائنا </h2>
+        <div class="row row-sm row-30 justify-content-center">
         <div class="col-xl-9">
           <div class="slick-quote">
             <!-- Slick Carousel-->
             <div class="slick-slider carousel-parent" id="carousel-parent" data-autoplay="true" data-swipe="true" data-items="1" data-child="#child-carousel" data-for="#child-carousel">
               <div class="item">
-                <p class="quote-minimal-text">I absolutely love the high quality of the food and the great customer service. I’ve been customers since 2006 and love the Burgundy Pepper London Broil.</p>
+                <p class="quote-minimal-text">
+                    <q>
+
+                        العسل طعمه حلو جدا ومش تقيل بناتى عجبهم جدا خصوصا المكسرات , تسلم ايديكم
+                    </q>
+                </p>
               </div>
               <div class="item">
-                <p class="quote-minimal-text">I love not having to run to the grocery store all the time for last minute things. Everything I need is already here and it’s healthier, hormone-free.</p>
+                <p class="quote-minimal-text">
+                    <q>
+
+                        منتجات فى منتهى الروعة والنظافه وان شاء الله متكونش أخر مرة وشكرا جدا ودائما من نجاح لنجاح                </p>
+                    </q>
               </div>
               <div class="item">
-                <p class="quote-minimal-text">As a 5+ year customer, I enjoy the quality of vegetables knowing that my family is getting good quality products. A great experience all the way round.</p>
+                <p class="quote-minimal-text">
+                    <q>
+
+                        بصراحة أوردر متاز و خدمة ممتازة وسرعة توصيل ممتازة                    </q>
+                </p>
               </div>
             </div>
             <div class="slick-quote-nav">
               <div class="slick-slider child-carousel" id="child-carousel" data-arrows="true" data-for="#carousel-parent" data-items="1" data-sm-items="1" data-md-items="3" data-lg-items="3" data-xl-items="3" data-xxl-items="3">
                 <div class="item">
-                  <div class="quote-minimal-figure"><img src="images/user-7-87x87.jpg" alt="" width="87" height="87"/>
+                    <div class="quote-minimal-figure"><img src="{% static 'images/logo.png'%}" alt="" width="87" height="87"/>
                   </div>
-                  <div class="quote-minimal-author">Patricia Goodman</div>
-                  <div class="quote-minimal-status">Client</div>
+                  <div class="quote-minimal-author">ايمان العايدي</div>
+                  <!-- <div class="quote-minimal-status">Client</div> -->
                 </div>
                 <div class="item">
-                  <div class="quote-minimal-figure"><img src="images/user-8-87x87.jpg" alt="" width="87" height="87"/>
+                  <div class="quote-minimal-figure"><img src="{% static 'images/logo.png'%}" alt="" width="87" height="87"/>
                   </div>
-                  <div class="quote-minimal-author">Jane Smith</div>
-                  <div class="quote-minimal-status">Client</div>
+                  <div class="quote-minimal-author">محمد فوزي</div>
+                  <!-- <div class="quote-minimal-status">Client</div> -->
                 </div>
                 <div class="item">
-                  <div class="quote-minimal-figure"><img src="images/user-9-87x87.jpg" alt="" width="87" height="87"/>
+                  <div class="quote-minimal-figure"><img src="{% static 'images/logo.png'%}" alt="" width="87" height="87"/>
                   </div>
-                  <div class="quote-minimal-author">Sam Wilson</div>
-                  <div class="quote-minimal-status">Client</div>
+                  <div class="quote-minimal-author">محمد سامح</div>
+                  <!-- <div class="quote-minimal-status">Client</div> -->
                 </div>
               </div>
             </div>
@@ -535,23 +637,23 @@
         <div class="isotope-filters">
           <button class="isotope-filters-toggle button button-sm button-icon button-icon-right button-default-outline" data-custom-toggle=".isotope-filters-list" data-custom-toggle-disable-on-blur="true" data-custom-toggle-hide-on-blur="true"><span class="icon mdi mdi-chevron-down"></span>Filter</button>
           <div class="isotope-filters-list-wrap">
-            <ul class="isotope-filters-list">
+            <!-- <ul class="isotope-filters-list">
               <li><a class="active" href="#" data-isotope-filter="*">All</a></li>
               <li><a href="#" data-isotope-filter="Type 1">Fruits</a></li>
               <li><a href="#" data-isotope-filter="Type 2">Vegetables</a></li>
-            </ul>
+            </ul> -->
           </div>
         </div>
         <div class="row row-30 isotope isotope-custom-1" data-lightgallery="group">
           <div class="col-sm-6 col-lg-4 col-xl-3 isotope-item" data-filter="Type 1">
             <!-- Thumbnail Classic-->
             <article class="thumbnail-classic block-1">
-              <div class="thumbnail-classic-figure"><img src="images/masonry-gallery-1-270x250.jpg" alt="" width="270" height="250"/>
+              <div class="thumbnail-classic-figure"><img src="{% static 'images/1.jpg' %}" alt="" width="270" height="250"/>
               </div>
               <div class="thumbnail-classic-caption">
                 <div>
-                  <h5 class="thumbnail-classic-title"><a href="single-product.html">Bananas</a></h5>
-                  <div class="thumbnail-classic-price">$12.99</div>
+                  <!-- <h5 class="thumbnail-classic-title"><a href="single-product.html">Bananas</a></h5>
+                  <div class="thumbnail-classic-price">$12.99</div> -->
                   <div class="thumbnail-classic-button-wrap">
                     <div class="thumbnail-classic-button"><a class="button button-gray-6 button-zakaria fl-bigmug-line-search74" href="images/grid-gallery-4-1200x800-original.jpg" data-lightgallery="item"><img src="images/masonry-gallery-1-270x250.jpg" alt="" width="270" height="250"/></a></div>
                     <div class="thumbnail-classic-button"><a class="button button-primary button-zakaria fl-bigmug-line-shopping202" href="cart-page.html"></a></div>
@@ -563,12 +665,12 @@
           <div class="col-sm-6 col-lg-4 col-xl-3 isotope-item" data-filter="Type 2">
             <!-- Thumbnail Classic-->
             <article class="thumbnail-classic block-1">
-              <div class="thumbnail-classic-figure"><img src="images/masonry-gallery-2-270x530.jpg" alt="" width="270" height="530"/>
+              <div class="thumbnail-classic-figure"><img src="i{% static 'images/2.jpg' %}" alt="" width="270" height="530"/>
               </div>
               <div class="thumbnail-classic-caption">
                 <div>
-                  <h5 class="thumbnail-classic-title"><a href="single-product.html">Tomatoes</a></h5>
-                  <div class="thumbnail-classic-price">$13.99</div>
+                  <!-- <h5 class="thumbnail-classic-title"><a href="single-product.html">Tomatoes</a></h5>
+                  <div class="thumbnail-classic-price">$13.99</div> -->
                   <div class="thumbnail-classic-button-wrap">
                     <div class="thumbnail-classic-button"><a class="button button-gray-6 button-zakaria fl-bigmug-line-search74" href="images/masonry-gallery-2-1200x800-original.jpg" data-lightgallery="item"><img src="images/masonry-gallery-2-270x530.jpg" alt="" width="270" height="530"/></a></div>
                     <div class="thumbnail-classic-button"><a class="button button-primary button-zakaria fl-bigmug-line-shopping202" href="cart-page.html"></a></div>
@@ -580,12 +682,12 @@
           <div class="col-sm-6 col-lg-4 col-xl-3 isotope-item" data-filter="Type 1">
             <!-- Thumbnail Classic-->
             <article class="thumbnail-classic block-1">
-              <div class="thumbnail-classic-figure"><img src="images/masonry-gallery-3-270x250.jpg" alt="" width="270" height="250"/>
+              <div class="thumbnail-classic-figure"><img src="{% static 'images/3.jpg' %}" alt="" />
               </div>
               <div class="thumbnail-classic-caption">
                 <div>
-                  <h5 class="thumbnail-classic-title"><a href="single-product.html">Lemons</a></h5>
-                  <div class="thumbnail-classic-price">$10.99</div>
+                  <!-- <h5 class="thumbnail-classic-title"><a href="single-product.html">Lemons</a></h5>
+                  <div class="thumbnail-classic-price">$10.99</div> -->
                   <div class="thumbnail-classic-button-wrap">
                     <div class="thumbnail-classic-button"><a class="button button-gray-6 button-zakaria fl-bigmug-line-search74" href="images/masonry-gallery-3-1200x800-original.jpg" data-lightgallery="item"><img src="images/masonry-gallery-3-270x250.jpg" alt="" width="270" height="250"/></a></div>
                     <div class="thumbnail-classic-button"><a class="button button-primary button-zakaria fl-bigmug-line-shopping202" href="cart-page.html"></a></div>
@@ -597,12 +699,12 @@
           <div class="col-sm-6 col-lg-4 col-xl-3 isotope-item" data-filter="Type 2">
             <!-- Thumbnail Classic-->
             <article class="thumbnail-classic block-1">
-              <div class="thumbnail-classic-figure"><img src="images/masonry-gallery-4-270x250.jpg" alt="" width="270" height="250"/>
+              <div class="thumbnail-classic-figure"><img src="{% static 'images/4.jpg' %}" alt="" width="270" height="250"/>
               </div>
               <div class="thumbnail-classic-caption">
                 <div>
-                  <h5 class="thumbnail-classic-title"><a href="single-product.html">Avocados</a></h5>
-                  <div class="thumbnail-classic-price">$8.99</div>
+                  <!-- <h5 class="thumbnail-classic-title"><a href="single-product.html">Avocados</a></h5>
+                  <div class="thumbnail-classic-price">$8.99</div> -->
                   <div class="thumbnail-classic-button-wrap">
                     <div class="thumbnail-classic-button"><a class="button button-gray-6 button-zakaria fl-bigmug-line-search74" href="images/masonry-gallery-4-1200x800-original.jpg" data-lightgallery="item"><img src="images/masonry-gallery-4-270x250.jpg" alt="" width="270" height="250"/></a></div>
                     <div class="thumbnail-classic-button"><a class="button button-primary button-zakaria fl-bigmug-line-shopping202" href="cart-page.html"></a></div>
@@ -614,12 +716,12 @@
           <div class="col-sm-6 col-lg-4 col-xl-3 isotope-item" data-filter="Type 1">
             <!-- Thumbnail Classic-->
             <article class="thumbnail-classic block-1">
-              <div class="thumbnail-classic-figure"><img src="images/masonry-gallery-5-270x250.jpg" alt="" width="270" height="250"/>
+              <div class="thumbnail-classic-figure"><img src="i{% static 'images/5.jpg' %}" alt="" width="270" height="250"/>
               </div>
               <div class="thumbnail-classic-caption">
                 <div>
-                  <h5 class="thumbnail-classic-title"><a href="single-product.html">Strawberries</a></h5>
-                  <div class="thumbnail-classic-price">$14.99</div>
+                  <!-- <h5 class="thumbnail-classic-title"><a href="single-product.html">Strawberries</a></h5>
+                  <div class="thumbnail-classic-price">$14.99</div> -->
                   <div class="thumbnail-classic-button-wrap">
                     <div class="thumbnail-classic-button"><a class="button button-gray-6 button-zakaria fl-bigmug-line-search74" href="images/grid-gallery-2-1200x800-original.jpg" data-lightgallery="item"><img src="images/masonry-gallery-5-270x250.jpg" alt="" width="270" height="250"/></a></div>
                     <div class="thumbnail-classic-button"><a class="button button-primary button-zakaria fl-bigmug-line-shopping202" href="cart-page.html"></a></div>
@@ -631,12 +733,12 @@
           <div class="col-sm-6 col-lg-4 col-xl-6 isotope-item" data-filter="Type 2">
             <!-- Thumbnail Classic-->
             <article class="thumbnail-classic block-1">
-              <div class="thumbnail-classic-figure"><img src="images/masonry-gallery-6-570x530.jpg" alt="" width="570" height="530"/>
+              <div class="thumbnail-classic-figure"><img src="{% static 'images/6.jpg' %}" alt="" width="570" height="530"/>
               </div>
               <div class="thumbnail-classic-caption">
                 <div>
-                  <h5 class="thumbnail-classic-title"><a href="single-product.html">Sorrel</a></h5>
-                  <div class="thumbnail-classic-price">$16.99</div>
+                  <!-- <h5 class="thumbnail-classic-title"><a href="single-product.html">Sorrel</a></h5>
+                  <div class="thumbnail-classic-price">$16.99</div> -->
                   <div class="thumbnail-classic-button-wrap">
                     <div class="thumbnail-classic-button"><a class="button button-gray-6 button-zakaria fl-bigmug-line-search74" href="images/grid-gallery-6-1200x800-original.jpg" data-lightgallery="item"><img src="images/masonry-gallery-6-570x530.jpg" alt="" width="570" height="530"/></a></div>
                     <div class="thumbnail-classic-button"><a class="button button-primary button-zakaria fl-bigmug-line-shopping202" href="cart-page.html"></a></div>
@@ -645,23 +747,7 @@
               </div>
             </article>
           </div>
-          <div class="col-sm-6 col-lg-8 col-xl-6 isotope-item" data-filter="Type 2">
-            <!-- Thumbnail Classic-->
-            <article class="thumbnail-classic block-1">
-              <div class="thumbnail-classic-figure"><img src="images/masonry-gallery-7-570x250.jpg" alt="" width="570" height="250"/>
-              </div>
-              <div class="thumbnail-classic-caption">
-                <div>
-                  <h5 class="thumbnail-classic-title"><a href="single-product.html">Almonds</a></h5>
-                  <div class="thumbnail-classic-price">$10.99</div>
-                  <div class="thumbnail-classic-button-wrap">
-                    <div class="thumbnail-classic-button"><a class="button button-gray-6 button-zakaria fl-bigmug-line-search74" href="images/grid-gallery-1-1200x800-original.jpg" data-lightgallery="item"><img src="images/masonry-gallery-7-570x250.jpg" alt="" width="570" height="250"/></a></div>
-                    <div class="thumbnail-classic-button"><a class="button button-primary button-zakaria fl-bigmug-line-shopping202" href="cart-page.html"></a></div>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
+          
         </div>
       </div>
     </div>

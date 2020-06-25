@@ -2,6 +2,7 @@ from django.shortcuts import render
 from .models import Product, Cart, Cart_item , Customer, Order
 from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 from django.contrib import messages
+from django.core.paginator import Paginator
 # Create your views here.
 
 
@@ -20,9 +21,11 @@ def product(request, id):
 
 # All products
 def shop(request):
-    print(request.path)
     products = Product.objects.all()
-    return render(request, 'shop.html', {'products': products})
+    paginator = Paginator(products, 21 )
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+    return render(request, 'shop.html',{'page_obj': page_obj})
 
 # cart page and add to cart POST request
 def cart(request):

@@ -12,7 +12,7 @@ class Product(models.Model):
     price = models.DecimalField(decimal_places=2, max_digits=10)
     sale_price = models.DecimalField(decimal_places=2, max_digits=10, blank=True)
     timestamp = models.DateTimeField(auto_now_add=True)
-    weight = models.DecimalField(decimal_places=2, max_digits=10,default=0.5)
+    weight = models.DecimalField(decimal_places=2, max_digits=10,default=250)
     availabe = models.BooleanField(default=True)
     featured = models.BooleanField(default=False)
 
