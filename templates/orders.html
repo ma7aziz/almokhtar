@@ -1,43 +1,74 @@
 {% extends 'base.html' %}
 {% block content %}
-<div class="container">
+<div class="container" style="padding: 35px 0">
     <div class="row">
-        <div class="col-lg-12">
-            <h2>Orders</h2>
+        <div class="col-lg-12 mb-3">
+            <h2>الطلبات الواردة </h2>
         </div>
+        
     </div>
-    <div>
-        <table class="table">
-
-       
-            <thead>
-                <tr>
-                    <th>id</th>
-                    <th>Customer</th>
-                    <th>Total Price </th>
-                    <th>Time </th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for order in page_obj %}
-                <tr>
-                
-                
-                    <td><a href="/order/{{order.id}}" style="color: #ff5b4b; font-weight:bold">{{order.id}}</a></td>
-                    <td>{{order.customer}}</td>
-                    <td>{{order.price}}</td>
-                    <td>{{order.timestamp}}</td> 
-                </tr> 
-                {% endfor %}
-            </tbody>
-        </table>
+    
+    <div class="row">
+        <!-- <div class="col-lg-3">
+            <h5 class="text-dark">معلومات الطلبات</h5>
+            <table class="table" dir="rtl">
+                <tbody>
+                    <tr>
+                        <td>
+                            عدد الطلبات
+                        </td>
+                        <td>{{count}}</td>
+                    </tr>
+                    <tr>
+                        <td>
+                        أجمالي الطلبات
+                        </td>
+                        <td>
+                            {{prices}}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> -->
+        <div class="col-lg-12">
+            <table class="table" dir="rtl">
+                <thead>
+                    <tr>
+                        <th>رقم الطلب </th>
+                        <th>اسم العميل</th>
+                        <th>اجمالي السعر</th>
+                        <th>وقت الطلب </th>
+                        <th>حالة الطلب </th>
+                       
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for order in page_obj %}
+                    <tr>
+   
+                        <td><a href="/order/{{order.id}}" style="color: #ff5b4b; font-weight:bold">{{order.id}}</a></td>
+                        <td><a href="/order/{{order.id}}" style="font-weight:bold; color: rgb(85, 85, 85)" >{{order.customer}}</a></td>
+                        <td>{{order.price}}</td>
+                        <td>{{order.timestamp}}</td> 
+                        <td>{% if order.delivered%}
+                            <span style="color: green;">تم التوصيل </span>
+                            {% else %}
+                            <span style="color:#ff5b4b ;">لم يتم التوصيل</span>
+                            {% endif %}
+                        </td>  
+                    </tr> 
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        
     </div>
     <div class="pagination-wrap">
         <!-- Bootstrap Pagination-->
         <nav aria-label="Page navigation">
           <ul class="pagination">
             {% if page_obj.has_previous %}
-            <li class="page-item page-item-control"><a class="page-link" href="#" aria-label="Previous">
+            <li class="page-item page-item-control"><a class="page-link" href="?page={{page_obj.previous_page_number}}" aria-label="Previous">
               <span
                   class="icon" aria-hidden="true"></span></a></li>
             {% endif %}
@@ -49,7 +80,7 @@
             {% endif %}
             {% endfor %}
             {% if page_obj.has_next %}
-            <li class="page-item page-item-control"><a class="page-link" href="#" aria-label="Next"><span class="icon"
+            <li class="page-item page-item-control"><a class="page-link" href="?page={{page_obj.next_page_number}}" aria-label="Next"><span class="icon"
                   aria-hidden="true"></span></a></li>
             {% endif %}
           </ul>

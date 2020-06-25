@@ -5,7 +5,7 @@ def add_variable_to_context(request):
         session=request.session.session_key, is_ordered=False).first()
 
     featured = Product.objects.all().filter(featured=True)
-    print(featured)
+
     return {
         'cart': cart,
         'featured':featured

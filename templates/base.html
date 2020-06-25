@@ -98,7 +98,8 @@
 										<a class="link" href="tel:+201011240195" dir="rtl">01011240195</a>
 									</li>
 									<!-- <li><a href="mailto:#">info@demolink.org</a></li> -->
-								</ul><a class="rd-navbar-basket rd-navbar-basket-mobile fl-bigmug-line-shopping202"
+								</ul>
+								<a class="rd-navbar-basket rd-navbar-basket-mobile fl-bigmug-line-shopping202"
 									href="{% url 'cart' %}"><span>{{cart.cart_count}}</span></a>
 							</div>
 							<!-- RD Navbar Panel-->
@@ -109,10 +110,9 @@
 								<!-- RD Navbar Brand-->
 								<div class="rd-navbar-brand">
 									<!--Brand-->
-									<a  href="{%url 'index' %}">
-										<img class="brand-logo" src="{% static 'images/logo.png' %}" alt=""
-											/>
-										
+									<a href="{%url 'index' %}">
+										<img class="brand-logo" src="{% static 'images/logo.png' %}" alt="" />
+
 									</a>
 								</div>
 							</div>
@@ -145,7 +145,8 @@
 											<h5 class="cart-inline-title">عدد المنتجات في السلة: <span>
 													{{cart.cart_count}}</span>
 											</h5>
-											<h6 class="cart-inline-title">أجمالي السعر:<span> {{cart.cart_price}}</span>
+											<h6 class="cart-inline-title" dir="rtl">أجمالي السعر:<span>
+													{{cart.cart_price}}</span>
 											</h6>
 										</div>
 										<div class="cart-inline-body">
@@ -180,7 +181,7 @@
 											</div>
 										</div>
 										{% else %}
-										<div class="cart-inline-header">
+										<div class="cart-inline-header" dir="rtl">
 											<h5 class="cart-inline-title">لا يوجد أي منتجات في السلة </h5>
 											<h6 class="cart-inline-title">ابدأ التسوق .. !!</h6>
 										</div>
@@ -204,19 +205,19 @@
 								<ul class="rd-navbar-nav">
 
 									<li {% if 'contact' in request.path %} class="rd-nav-item active" {% else %}
-										class="rd-nav-item " {% endif %}><a href="{% url 'contact' %}">اتصل بنا </a>
+										class="rd-nav-item " {% endif %}><a href="{% url 'contact' %}" style="color: #212121;">اتصل بنا </a>
 									</li>
 
 
 									<li {% if 'shop' in request.path %} class="rd-nav-item active" {% else %}
 										class="rd-nav-item " {% endif %}><a class="rd-nav-link"
-											href="{%url 'shop' %}">منتجاتنا</a>
+											href="{%url 'shop' %}" style="color: #212121;">منتجاتنا</a>
 
 									</li>
 
 									<li {% if '/' == request.path %} class="rd-nav-item active" {% else %}
 										class="rd-nav-item " {% endif %}><a class="rd-nav-link"
-											href="{%url 'index' %}">الرئيسية</a>
+											href="{%url 'index' %}" style="color: #212121;">الرئيسية</a>
 									</li>
 								</ul>
 							</div>

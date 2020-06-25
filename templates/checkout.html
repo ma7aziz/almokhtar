@@ -27,50 +27,50 @@
       <div class="row row-50 justify-content-center">
         <div class="col-md-10 col-lg-12">
           <h3 class="font-weight-medium">بيانات التوصيل</h3>
-          <form class="form-checkout" action="{% url 'place_order'%}" method="POST" id="order_form" >
+          <form class="form-checkout" action="{% url 'place_order'%}" method="POST" id="order_form" name="form-checkout" >
             {% csrf_token %}
             <input type="hidden" value="{{cart.id}}" name="cart_id">
             <div class="row row-30">
               <div class="col-12">
                 <div class="form-wrap">
-                  <input class="form-input" id="checkout-first-name-1" type="text" name="name" data-constraints="@Required" required/>
+                  <input class="form-input"  required id="checkout-first-name-1" type="text" name="name" data-constraints="@Required" />
                   <label class="form-label" for="checkout-first-name-1">الاسم</label>
                 </div>
               </div>
     
               <div class="col-12">
                 <div class="form-wrap">
-                  <input class="form-input" id="checkout-address-1" type="text" name="address" data-constraints="@Required" required/>
+                  <input class="form-input"  required id="checkout-address-1" type="text" name="address" data-constraints="@Required" required >
                   <label class="form-label" for="checkout-address-1"> العنوان بالتفصيل</label>
                 </div>
               </div>
               <div class="col-12">
                 <div class="form-wrap">
-                  <input class="form-input" id="checkout-city-1" type="text" name="city" data-constraints="@Required" required/>
+                  <input class="form-input"  required id="checkout-city-1" type="text" name="city" data-constraints="@Required" required/>
                   <label class="form-label" for="checkout-city-1">المدينة/المحافظة</label>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="form-wrap">
-                  <input class="form-input" id="checkout-email-1" type="email" name="email" data-constraints="@Email @Required" required/>
+                  <input class="form-input"  required id="checkout-email-1" type="email" name="email" data-constraints="@Email @Required" required/>
                   <label class="form-label" for="checkout-email-1">البريد الاليكتروني</label>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="form-wrap">
-                  <input class="form-input" id="checkout-phone-1" type="text" name="phone" data-constraints="@Numeric" required/>
+                  <input class="form-input"  required id="checkout-phone-1" type="text" name="phone" data-constraints="@Numeric" required/>
                   <label class="form-label" for="checkout-phone-1">رقم الهاتف</label>
                 </div>
               </div>
               <div class="col-12">
                 <div class="form-wrap">
-                  <input class="form-input" id="notes" type="text" name="notes" />
+                  <input class="form-input"   id="notes" type="text" name="notes" />
                   <label class="form-label" for="notes">معلومات اضافية</label>
                 </div>
               </div>
             
             </div>
-          </form>
+         
         </div>
       </div>
     </div>
@@ -103,7 +103,7 @@
               <td>{{i.item.price}}</td>
               <td>
                 <div class="table-cart-stepper">
-                  <input class="form-input" type="number" data-zeros="true" value="{{i.qty}}" min="1" max="1000">
+                  <input class="form-input"  required type="number" data-zeros="true" value="{{i.qty}}" min="1" max="1000">
                 </div>
               </td>
               <td>{{i.total_price}}</td>
@@ -118,19 +118,6 @@
   <section class="section section-sm section-first bg-default text-md-left">
     <div class="container">
       <div class="row row-50 justify-content-center">
-        <!-- <div class="col-md-10 col-lg-6">
-          <h3 class="font-weight-medium">طريقة الدفع </h3>
-          <div class="box-radio">
-            <div class="radio-panel">
-              <label class="radio-inline active">
-                <input name="input-group-radio" value="checkbox-1" type="radio" checked>كاش 
-              </label>
-              <div class="radio-panel-content">
-              </div>
-            </div>
-        
-          </div>
-        </div> -->
         <div class="col-md-10 col-lg-6 text-md-right">
           <h3 class="font-weight-medium">المبلغ</h3>
           <div class="table-custom-responsive">
@@ -142,11 +129,11 @@
                 </tr>
                 <tr>
                   <td>خدمة التوصيل</td>
-                  <td>Free</td>
+                  <td>25</td>
                 </tr>
                 <tr>
                   <td>الاجمالي</td>
-                  <td>{{cart.cart_price}}</td>
+                  <td>{{cart.cart_price|add:25}}</td>
                 </tr>
               </tbody>
             </table>
@@ -154,9 +141,10 @@
         </div>
       </div>
       <div class="col-12">
-        <button class="button button-primary" id="submit-btn" >تأكيد الطلب</button>
+        <button class="button button-primary" type="submit" id="submit-btn" >تأكيد الطلب</button>
       </div>
     </div>
+  </form>
   </section>
   {% else %}
   <section style="margin: 20px 0;">
@@ -169,9 +157,14 @@
   <script>
     let orderForm = document.getElementById('order_form')
     let btn = document.getElementById('submit-btn')
+ 
+
+      }
     btn.addEventListener('click', ()=> {
+      
       orderForm.submit()
     })
-  </script>
+
+  </script> 
 
 {% endblock%}

@@ -4,6 +4,8 @@ from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 from django.contrib import messages
 from django.core.paginator import Paginator
 from django.contrib.auth.decorators import user_passes_test
+from django.db.models import Sum
+
 # Create your views here.
 
 
@@ -88,7 +90,7 @@ def place_order(request):
     email=request.POST['email'], phone= request.POST['phone'])
     customer.save()
     notes=request.POST['notes']
-    price = cart.cart_price()
+    price = cart.cart_price() + 25 
     order = Order(customer= customer, cart=cart, notes = notes, price=price)
     order.save()
     cart.is_ordered = True
@@ -103,6 +105,7 @@ def search(request):
     return render(request, 'search.html', {'result': result, 'keyword': keyword})
 
 def order(request):
+
     return render(request, 'order_success.html', {'order':Order.objects.all().first()})
 
 
@@ -123,8 +126,17 @@ def orders(request):
     paginator = Paginator(orders, 15 )
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
+    count = orders.count()
+    # orders_prices = Order.objects.aggregate(Sum('price'))['price__sum']
+    # deivered_prices = Order.objects.filter(delivered == True)
+    # aggregate(Sum('price'))['price__sum']
+    
+    # print(delivered_prices)
     return render(request, 'orders.html' , 
-        {'page_obj': page_obj}
+        {'page_obj': page_obj, 
+        # 'count': count, 
+        # 'prices': orders_prices
+        }
     )
 
 
