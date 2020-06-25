@@ -92,7 +92,7 @@ SECRET_KEY = 's3xxd2x-8)z(-mz6geec2ii6*sd3v#crx^gs7ew@u=faa37i=2'
 #         default=config('DATABASE_URL')
 #     )
 #     }
-    DATABASES = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'almokhtar',
