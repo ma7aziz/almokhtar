@@ -40,9 +40,18 @@
 			height: 100%;
 		}
 
-		.alert {
+		.message {
 			position: fixed;
 			top: 80%;
+			right: 5%;
+			z-index: 99999999999999999999999999;
+			background-color: #dff3e4;
+			color: rgb(102, 179, 95);
+
+		}
+		.alert-dismissible {
+			position: fixed;
+			top: 70%;
 			right: 5%;
 			z-index: 99999999999999999999999999;
 			background-color: #dff3e4;
@@ -227,35 +236,41 @@
 			</div>
 		</header>
 		{% if messages %}
-		{% if request.path != 'cart'%}
-			<div class="">
-				<p>
-					لاتمام عملية الشراء اضغط هنا 
-				</p>
-			</div>
+		{% if 'cart' not in request.path %}
+		<div class="alert alert-dismissible fade show" role="alert">
+			<strong>
+
+				لاتمام عملية الشراء اضغط <a href="{% url 'cart' %}">هنـا</a>
+			</strong>
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
 		{% endif %}
 		{% for message in messages %}	
-		<div class="alert" role="alert">
+		<div class="alert message" role="alert">
 			{{message}}
 		</div>	
+
 		{% endfor%}
 		{% endif %}
 		{% block content %} {% endblock %}
-		<footer class="section footer-modern footer-modern-2" style="background-color: #5A3733;" dir="">
-
+		<footer class="section footer-modern footer-modern-2" style="background-color: #5A3733;" >
 			<div class="footer-modern-panel text-center">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-6">
-							اتصل بنا
+						<div class="col-md-12" dir="rtl" >
+							<ul class="list-inline list-social-3 list-inline-sm" style="color: #F3CE53;">
+								<li><a href="https://www.facebook.com/Elmokhtarlltagra/" class="icon mdi mdi-facebook icon-xl" target="__blank"></a></li>
+								<li><a href="tel:+201011240195" class="icon mdi mdi-phone icon-xl" ></a></li>
+								<li><a href="https://wa.me/201011240195" class="icon mdi mdi-whatsapp icon-xl" target="__blank"></a></li>
+							</ul>
 						</div>
-						<div class="col-md-6"></div>
+						<div class="col-md-6">
+							
+						</div>
 					</div>
-				</div>
-			</div>
-			<div class="footer-modern-panel text-center">
-				<div class="container">
-					<p class="rights" style="color: #fff; font-size: 1.2rem"><span>&copy;&nbsp; </span><span
+					<p class="rights" style="color:#fff; font-size: 1.2rem"><span>&copy;&nbsp; </span><span
 							class="copyright-year"></span><span>&nbsp;</span><span>
 							<a href="https://www.braineg.com" target="__blank">Brain analytica</a> </span><span>.&nbsp; All rights
 							reserved</span><span>&nbsp;</span><span>.</span></p>
@@ -318,9 +333,9 @@
 	</script>
 	<script>
 		setTimeout(function () {
-			$('.alert').fadeOut('fast');
+			$('.message').fadeOut('fast');
 			}, 5000);
-			
+
 	</script>
 </body>
 
