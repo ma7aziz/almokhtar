@@ -48,7 +48,7 @@
             {% endif %}
             {%if product.image3 %}
             <div class="item">
-              <div class="slick-product-figure"><img src="{{product.image4.url}}" alt="" width="530" height="480" />
+              <div class="slick-product-figure"><img src="{{product.image3.url}}" alt="" width="530" height="480" />
               </div>
             </div>
             {% endif %}
@@ -117,10 +117,10 @@
               {% csrf_token %}
               <input type="hidden" value="{{product.id}}" name="product_id">
               <div class="product-stepper">
-                <input class="form-input" type="number" data-zeros="true" value="1" min="1" max="1000" name="qty">
+                <input class="form-input" type="number" data-zeros="true" step="1" value="1" min="1" max="1000" name="qty">
               </div>
               <div>
-                <button class="button button-primary button-zakaria">Add To Cart</button>
+                <button class="button button-primary button-zakaria">أضف الي السلة </button>
               </div>
             </form>
           </div>
@@ -244,6 +244,71 @@
         </div>
       </div> -->
     </div>
+  </div>
+</section>
+<section class="section section-xxl bg-image-1">
+  <div class="container">
+      <h2 class="text-transform-capitalize wow fadeScale">أراء عملائنا </h2>
+      <div class="row row-sm row-30 justify-content-center">
+          <div class="col-xl-9">
+              <div class="slick-quote">
+                  <!-- Slick Carousel-->
+                  <div class="slick-slider carousel-parent" id="carousel-parent" data-autoplay="true"
+                      data-swipe="true" data-items="1" data-child="#child-carousel" data-for="#child-carousel">
+                      <div class="item">
+                          <p class="quote-minimal-text">
+                              <q>
+
+                                  العسل طعمه حلو جدا ومش تقيل بناتى عجبهم جدا خصوصا المكسرات , تسلم ايديكم
+                              </q>
+                          </p>
+                      </div>
+                      <div class="item">
+                          <p class="quote-minimal-text">
+                              <q>
+
+                                  منتجات فى منتهى الروعة والنظافه وان شاء الله متكونش أخر مرة وشكرا جدا ودائما من نجاح
+                                  لنجاح </p>
+                          </q>
+                      </div>
+                      <div class="item">
+                          <p class="quote-minimal-text">
+                              <q>
+
+                                  بصراحة أوردر متاز و خدمة ممتازة وسرعة توصيل ممتازة </q>
+                          </p>
+                      </div>
+                  </div>
+                  <div class="slick-quote-nav">
+                      <div class="slick-slider child-carousel" id="child-carousel" data-arrows="true"
+                          data-for="#carousel-parent" data-items="1" data-sm-items="1" data-md-items="3"
+                          data-lg-items="3" data-xl-items="3" data-xxl-items="3">
+                          <div class="item">
+                              <div class="quote-minimal-figure"><img src="{% static 'images/logo.png'%}" alt=""
+                                      width="87" height="87" />
+                              </div>
+                              <div class="quote-minimal-author">ايمان العايدي</div>
+                              <!-- <div class="quote-minimal-status">Client</div> -->
+                          </div>
+                          <div class="item">
+                              <div class="quote-minimal-figure"><img src="{% static 'images/logo.png'%}" alt=""
+                                      width="87" height="87" />
+                              </div>
+                              <div class="quote-minimal-author">محمد فوزي</div>
+                              <!-- <div class="quote-minimal-status">Client</div> -->
+                          </div>
+                          <div class="item">
+                              <div class="quote-minimal-figure"><img src="{% static 'images/logo.png'%}" alt=""
+                                      width="87" height="87" />
+                              </div>
+                              <div class="quote-minimal-author">محمد سامح</div>
+                              <!-- <div class="quote-minimal-status">Client</div> -->
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
   </div>
 </section>
 <!-- Related Products-->

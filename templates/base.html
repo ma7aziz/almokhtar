@@ -227,10 +227,17 @@
 			</div>
 		</header>
 		{% if messages %}
-		{% for message in messages %}
+		{% if request.path != 'cart'%}
+			<div class="">
+				<p>
+					لاتمام عملية الشراء اضغط هنا 
+				</p>
+			</div>
+		{% endif %}
+		{% for message in messages %}	
 		<div class="alert" role="alert">
 			{{message}}
-		</div>
+		</div>	
 		{% endfor%}
 		{% endif %}
 		{% block content %} {% endblock %}
@@ -238,9 +245,19 @@
 
 			<div class="footer-modern-panel text-center">
 				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							اتصل بنا
+						</div>
+						<div class="col-md-6"></div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-modern-panel text-center">
+				<div class="container">
 					<p class="rights" style="color: #fff; font-size: 1.2rem"><span>&copy;&nbsp; </span><span
 							class="copyright-year"></span><span>&nbsp;</span><span>
-							<a href="braineg.com">Brain analytica</a> </span><span>.&nbsp; All rights
+							<a href="https://www.braineg.com" target="__blank">Brain analytica</a> </span><span>.&nbsp; All rights
 							reserved</span><span>&nbsp;</span><span>.</span></p>
 				</div>
 			</div>
@@ -302,7 +319,8 @@
 	<script>
 		setTimeout(function () {
 			$('.alert').fadeOut('fast');
-		}, 4000); // <-- time in milliseconds
+			}, 5000);
+			
 	</script>
 </body>
 

@@ -10,7 +10,6 @@ from django.db.models import Sum
 
 
 def index(request):
-    print(request.path)
     if not request.session or not request.session.session_key:
         request.session.save()
     products = Product.objects.all()
@@ -33,7 +32,6 @@ def shop(request):
 # cart page and add to cart POST request
 def cart(request):
     if request.method == 'POST':
-        print(request.POST)
         product = Product.objects.get(pk=request.POST['product_id'])
         if request.POST['qty']:
             qty = int(request.POST['qty'])
@@ -48,6 +46,8 @@ def cart(request):
                     cart_item.qty += qty
                     cart_item.save()
                     messages.success(request, 'تم اضافة المنتج الي السلة')
+
+                    # messages.success(request, 'لاتمام عملية الشراء <a href="{% url 'cart' %}"> </a>اضغط هنا  <br> تم اضافة المنتج الي السلة')
                 else:
                     cart_item.qty += 1
                     cart_item.save()
@@ -72,7 +72,6 @@ def minus_cart(request):
     pass
 
 def remove_cart(request, id):
-    print(id)
     cart_item = Cart_item.objects.get(pk=id)
     cart_item.delete()
     messages.success(request, 'تم حذف المنتج من السلة')
@@ -127,11 +126,6 @@ def orders(request):
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
     count = orders.count()
-    # orders_prices = Order.objects.aggregate(Sum('price'))['price__sum']
-    # deivered_prices = Order.objects.filter(delivered == True)
-    # aggregate(Sum('price'))['price__sum']
-    
-    # print(delivered_prices)
     return render(request, 'orders.html' , 
         {'page_obj': page_obj, 
         # 'count': count, 

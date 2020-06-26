@@ -10,7 +10,7 @@
         </div>
       </div>
     </div>
-    <div class="breadcrumbs-custom-footer">
+    <!-- <div class="breadcrumbs-custom-footer">
       <div class="container">
         <ul class="breadcrumbs-custom-path">
           <li><a href="{%url 'index'%}">Home</a></li>
@@ -19,7 +19,7 @@
         </ul>
       </div>
     </div>
-  </section>
+  </section> -->
   {% if cart %}
   <!-- Section checkout form-->
   <section class="section section-sm section-last bg-default text-md-right">
@@ -103,7 +103,8 @@
               <td>{{i.item.price}}</td>
               <td>
                 <div class="table-cart-stepper">
-                  <input class="form-input"  required type="number" data-zeros="true" value="{{i.qty}}" min="1" max="1000">
+                  {{i.qty}}
+                  <!-- <input class="form-input"  required type="number" data-zeros="true" value="{{i.qty}}" min="1" max="1000"> -->
                 </div>
               </td>
               <td>{{i.total_price}}</td>
