@@ -19,7 +19,7 @@
         <h3 class="title-classic-title">للتواصل </h3>
         <p class="title-classic-subtitle">يمكنك ارسال رسالة للتعليق او الاستفسار عن منتجاتنا <br class="d-none d-lg-block"> وسوف نقوم بالرد في اقرب وقت ممكن</p>
       </div>
-      <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="POST" action="{% url 'contact' %}" dir="rtl">
+      <form method="POST" action="{% url 'contact' %}" dir="rtl">
         {% csrf_token %}
         <div class="row row-20 row-md-30">
           <div class="col-lg-8">

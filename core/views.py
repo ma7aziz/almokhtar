@@ -1,10 +1,14 @@
-from django.shortcuts import render
-from .models import Product, Cart, Cart_item , Customer, Order
-from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
+from django.conf import settings
 from django.contrib import messages
-from django.core.paginator import Paginator
 from django.contrib.auth.decorators import user_passes_test
+from django.core.mail import EmailMultiAlternatives, mail_admins, send_mail , EmailMessage
+from django.core.paginator import Paginator
 from django.db.models import Sum
+from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
+from django.shortcuts import render
+from .models import Cart, Cart_item, Customer, Order, Product
+from django.template.loader import render_to_string
+
 
 # Create your views here.
 
@@ -94,6 +98,16 @@ def place_order(request):
     order.save()
     cart.is_ordered = True
     cart.save()
+    msg_html = render_to_string('order_confirm_email.html', {'order':order})
+    send_mail('Almokhtar Trading - Order Confirmation',
+                  f'Your order has been confirmed successfully. \n Order number : {order.id} . \n Our team will reach out to you soon. \n For further assistance please call +++++',
+                  settings.EMAIL_HOST_USER,
+                  [request.POST['email']] , html_message=msg_html , fail_silently=False)
+    email_msg = EmailMessage(
+        subject='New Order', body='We recieved new order , please check your admin panel', 
+        from_email='admin@almoukhtar-eg.com.com',  # in your Zoho domain (omit to use DEFAULT_FROM_EMAIL)
+        to=['ma7moud.aelaziz@gmail.com.com'],)
+    email_msg.send()
     return render(request, 'order_success.html', {'order':order})
 
 
@@ -114,8 +128,15 @@ def contact(request):
         email = request.POST['email']
         phone = request.POST['phone']
         message = request.POST['message']
-        messages.success(request, 'تم ارسال رسالتك بنجاح ')
-        return render(request, 'contact-us.html')
+        messages.success(request, ' تم ارسال رسالتك بنجاح .. سوف نقوم بالتواصل معك في اقرب وقت ')
+        msg_html = render_to_string('new_contact.html', {'name':name , 'email':email , 'phone':phone, 'message':message})
+        subject  = 'رسالة جديدة'
+        text_content = f'تم استلام رسالة جديدة من موقعنا الاليكتروني .. اسم المرسل {name}..رقم التليفون {phone} .. الايميل {email} ,محتوي الرسالة : {message}'
+        html_content = msg_html
+        email_msg = EmailMultiAlternatives(subject, text_content , 'admin@almoukhtar-eg.com', ['ma7moud.aelaziz@gmail.com', ], )
+        email_msg.attach_alternative(html_content, "text/html")
+        email_msg.send()
+        
     return render(request, 'contact-us.html')
 
 

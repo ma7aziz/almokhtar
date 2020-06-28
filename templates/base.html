@@ -5,6 +5,7 @@
 <head>
 	<title>{% block title%} {% endblock %}</title>
 	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<script src="/cdn-cgi/apps/head/3ts2ksMwXvKRuG480KNifJ2_JNM.js"></script>
@@ -59,6 +60,9 @@
 			color: rgb(102, 179, 95);
 
 		}
+		header li.rd-nav-item a {
+			color: #F3CE53 !important;
+		}
 	</style>
 </head>
 
@@ -101,17 +105,24 @@
 					<div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1"
 						data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
 					<div class="rd-navbar-aside-outer">
+						
 						<div class="rd-navbar-aside">
 							<div class="rd-navbar-collapse">
 								<ul class="contacts-classic">
 									<li dir="rtl"><span class="contacts-classic-title">اتصل بنا:</span>
 										<a class="link" href="tel:+201011240195" dir="rtl">01011240195</a>
 									</li>
-									<!-- <li><a href="mailto:#">info@demolink.org</a></li> -->
+
+									<li>
+										<a href="https://www.facebook.com/Elmokhtarlltagra/" class="icon mdi mdi-facebook mdi-36px icon-xxl" target="__blank"  ></a>
+										<a href="https://wa.me/201011240195" class="icon mdi mdi-whatsapp icon-xl" target="__blank"></a></li>
 								</ul>
+								
+							</div>
+							<div class="rd-navbar-fixed-element-2" style="top: 18px;">
 								<a class="rd-navbar-basket rd-navbar-basket-mobile fl-bigmug-line-shopping202"
 									href="{% url 'cart' %}"><span>{{cart.cart_count}}</span></a>
-							</div>
+							  </div>
 							<!-- RD Navbar Panel-->
 							<div class="rd-navbar-panel">
 								<!-- RD Navbar Toggle-->
@@ -237,10 +248,9 @@
 			</div>
 		</header>
 		{% if messages %}
-		{% if 'cart' not in request.path %}
+		{% if 'cart' and 'contact' not in request.path %}
 		<div class="alert alert-dismissible fade show" role="alert">
 			<strong>
-
 				لاتمام عملية الشراء اضغط <a href="{% url 'cart' %}">هنـا</a>
 			</strong>
 			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -284,7 +294,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.7.2/js/lightgallery.min.js" integrity="sha256-H3CTHwp+3RRpBr5M9snvAP8jKoNAxgYkGaubdQkJ4jU=" crossorigin="anonymous"></script>
 	<script src="{% static 'js/core.min.js' %}"></script>
 	<script src="{% static 'js/script.js' %}"></script>
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 		$(document).ready(function () {
 			$('.down').on('click', function (e) {
 				e.preventDefault()
@@ -307,7 +317,7 @@
 				})
 			})
 		});
-	</script>
+	</script> -->
 	<script>
 		// add to cart 
 		$(document).ready(function () {

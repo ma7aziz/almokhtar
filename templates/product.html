@@ -2,6 +2,16 @@
 {% block title%}{{product.title}} {% endblock %}
 {%load static %}
 {% block content %}
+<style>
+  input[type='number'] {
+    font-size: 25px;
+    text-align: center;
+ 
+  
+  }
+
+
+</style>
 <section class="breadcrumbs-custom">
   <div class="parallax-container" data-parallax-img="{% static 'images/bg.jpg'  %}">
     <div class="breadcrumbs-custom-body parallax-content context-dark">
@@ -116,11 +126,12 @@
             <form action="{%url 'cart' %}" method="POST">
               {% csrf_token %}
               <input type="hidden" value="{{product.id}}" name="product_id">
-              <div class="product-stepper">
-                <input class="form-input" type="number" data-zeros="true" step="1" value="1" min="1" max="1000" name="qty">
-              </div>
+                <div class="product-count">
+                  <input class="form-input number-input" type="number" data-zeros="true" step="1" value="1" min="1" max="1000" name="qty">
+                </div>
+              
               <div>
-                <button class="button button-primary button-zakaria">أضف الي السلة </button>
+                <button class="button button-lg button-primary button-zakaria">أضف الي السلة </button>
               </div>
             </form>
           </div>
@@ -352,4 +363,5 @@
     </div>
   </div>
 </section>
+
 {% endblock %}
