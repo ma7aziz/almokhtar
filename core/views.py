@@ -105,7 +105,7 @@ def place_order(request):
                   [request.POST['email']] , html_message=msg_html , fail_silently=False)
     email_msg = EmailMessage(
         subject='New Order', body='We recieved new order , please check your admin panel', 
-        from_email='admin@almoukhtar-eg.com.com',  # in your Zoho domain (omit to use DEFAULT_FROM_EMAIL)
+        from_email='admin@almoukhtar-eg.com',  
         to=['ma7moud.aelaziz@gmail.com.com'],)
     email_msg.send()
     return render(request, 'order_success.html', {'order':order})
