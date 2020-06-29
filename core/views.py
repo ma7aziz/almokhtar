@@ -93,7 +93,7 @@ def place_order(request):
     email=request.POST['email'], phone= request.POST['phone'])
     customer.save()
     notes=request.POST['notes']
-    price = cart.cart_price() + 25.00
+    price = cart.cart_price() + 25
     order = Order(customer= customer, cart=cart, notes = notes, price=price)
     order.save()
     cart.is_ordered = True
