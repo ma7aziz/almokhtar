@@ -351,7 +351,7 @@ body {
     /* font-family: 'Almarai', lato, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif; */
     font-family:  'Cairo', Arial, sans-serif;
     color: #777;
-    background-color: #fff;
+    background-color: #F9EBBA;
     -webkit-text-size-adjust: none;
     -webkit-font-smoothing: subpixel-antialiased
 }
@@ -3880,7 +3880,7 @@ hr {
 
 .button-lg {
     padding: 9px 25px;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 2
 }
 
@@ -4035,7 +4035,8 @@ hr {
 .btn-primary:focus {
     color: #fff;
     background: #EB6D2F;
-    border-color: #EB6D2F
+    border-color: #EB6D2F;
+    font-size: 1.2em
 }
 
 .btn-primary:hover {
@@ -10269,7 +10270,7 @@ html [class*=section-].section-top-0 {
 }
 
 .bg-default {
-    background-color: #fff
+    background-color: #fdf5c6
 }
 
 .bg-primary {

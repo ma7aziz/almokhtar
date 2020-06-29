@@ -93,7 +93,7 @@ def place_order(request):
     email=request.POST['email'], phone= request.POST['phone'])
     customer.save()
     notes=request.POST['notes']
-    price = cart.cart_price() + 25 
+    price = cart.cart_price() + 25.00
     order = Order(customer= customer, cart=cart, notes = notes, price=price)
     order.save()
     cart.is_ordered = True
@@ -106,7 +106,7 @@ def place_order(request):
     email_msg = EmailMessage(
         subject='New Order', body='We recieved new order , please check your admin panel', 
         from_email='admin@almoukhtar-eg.com',  
-        to=['ma7moud.aelaziz@gmail.com.com'],)
+        to=['ma7moud.aelaziz@gmail.com'],)
     email_msg.send()
     return render(request, 'order_success.html', {'order':order})
 
