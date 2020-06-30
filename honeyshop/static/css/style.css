@@ -5950,7 +5950,7 @@ textarea.textarea-lg {
 
 .thumbnail-classic-caption {
     padding: 15px;
-    background: #f9faf9
+    /* background: #f9faf9 */
 }
 
 .thumbnail-classic-title {
@@ -11902,7 +11902,7 @@ html.tablet .ui-to-top {
 .rd-navbar-static .rd-nav-link {
     position: relative;
     display: inline-block;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.2;
     font-weight: 600;
     /* letter-spacing: -.1em; */
