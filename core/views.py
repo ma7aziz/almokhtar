@@ -22,7 +22,8 @@ def index(request):
 # single product page
 def product(request, id):
     product = Product.objects.get(pk=id)
-    return render(request, 'product.html', {'product': product})
+    related = Product.objects.all().filter(featured=True)[:4]
+    return render(request, 'product.html', {'product': product , 'related':related})
 
 
 # All products
