@@ -335,7 +335,7 @@
           <div class="product-body">
             <div class="product-figure"><img src="{{product.main_image.url}}" alt="" width="196" height="134" />
             </div>
-            <h5 class="product-title"><a href="single-product.html">{{product.title}}</a></h5>
+            <h5 class="product-title"><a href="/product/{{product.id}}">{{product.title}}</a></h5>
             {% if product.sale_price  %}
             <div class="product-price-wrap">
               <div class="product-price product-price-old">{{product.price}}</div>
@@ -351,7 +351,7 @@
               <div class="product-button">
                 <form action="{% url 'cart' %}" method="POST">
                   {% csrf_token %}
-                  <input type="hidden" value="{{pro.id}}" name="product_id">
+                  <input type="hidden" value="{{product.id}}" name="product_id">
                   <input type="hidden" value="1" name="qty">
                   <button class="button button-primary button-zakaria fl-bigmug-line-shopping202"></button>
                 </form>
