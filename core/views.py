@@ -130,14 +130,13 @@ def contact(request):
         phone = request.POST['phone']
         message = request.POST['message']
         messages.success(request, ' تم ارسال رسالتك بنجاح .. سوف نقوم بالتواصل معك في اقرب وقت ')
-        msg_html = render_to_string('new_contact.html', {'name':name , 'email':email , 'phone':phone, 'message':message})
+        msg_html = render_to_string('emails/new_contact.html', {'name':name , 'email':email , 'phone':phone, 'message':message})
         subject  = 'رسالة جديدة'
         text_content = f'تم استلام رسالة جديدة من موقعنا الاليكتروني .. اسم المرسل {name}..رقم التليفون {phone} .. الايميل {email} ,محتوي الرسالة : {message}'
         html_content = msg_html
         email_msg = EmailMultiAlternatives(subject, text_content , 'admin@almoukhtar-eg.com', ['ma7moud.aelaziz@gmail.com', ], )
         email_msg.attach_alternative(html_content, "text/html")
         email_msg.send()
-        
     return render(request, 'contact-us.html')
 
 
