@@ -101,13 +101,13 @@ def place_order(request):
     cart.save()
     msg_html = render_to_string('order_confirm_email.html', {'order':order})
     send_mail('Almokhtar Trading - Order Confirmation',
-                  f'Your order has been confirmed successfully. \n Order number : {order.id} . \n Our team will reach out to you soon. \n For further assistance please call +++++',
+                  f'Your order has been confirmed successfully. \n Order number : {order.id} . \n Our team will reach out to you soon. \n For further assistance please call 01011240195',
                   settings.EMAIL_HOST_USER,
                   [request.POST['email']] , html_message=msg_html , fail_silently=False)
     email_msg = EmailMessage(
         subject='New Order', body='We recieved new order , please check your admin panel', 
         from_email='admin@almoukhtar-eg.com',  
-        to=['ma7moud.aelaziz@gmail.com'],)
+        to=['omar.elmashaly@gmail.com'],)
     email_msg.send()
     return render(request, 'order_success.html', {'order':order})
 
