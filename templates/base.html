@@ -250,7 +250,8 @@
 			</div>
 		</header>
 		{% if messages %}
-		{% if 'cart' and 'contact' not in request.path %}
+		{% if 'cart' and  'contact' not  in request.path %}
+			{% if cart.cart_count %}
 		<div class="alert alert-dismissible fade show" role="alert">
 			<strong>
 				لاتمام عملية الشراء اضغط <a href="{% url 'cart' %}">هنـا</a>
@@ -259,6 +260,7 @@
 			  <span aria-hidden="true">&times;</span>
 			</button>
 		  </div>
+		  {% endif %}
 		{% endif %}
 		{% for message in messages %}	
 		<div class="alert message" role="alert">
