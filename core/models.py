@@ -49,7 +49,14 @@ class Cart_item(models.Model):
     time = models.DateTimeField(auto_now_add=True)
 
     def total_price(self):
-        return self.qty * self.item.price
+        if self.item.sale_price:
+            total_price = self.qty * self.item.sale_price
+
+        else:
+            total_price = self.qty * self.item.price
+        return total_price
+        
+    
 
     def __str__(self):
         return self.item.title

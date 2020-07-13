@@ -108,11 +108,12 @@
         <div class="single-product">
           <h3 class="text-transform-none font-weight-medium">{{product.title}}</h3>
           <div class="group-md group-middle">
-            <div class="single-product-price">{{product.price}}</div>
-            <!-- <div class="single-product-rating"><span class="icon mdi mdi-star"></span><span
-                class="icon mdi mdi-star"></span><span class="icon mdi mdi-star"></span><span
-                class="icon mdi mdi-star"></span><span class="icon mdi mdi-star-half"></span>
-            </div> -->
+            {% if product.sale_price %}
+            <div class="single-product-price product-price-old" dir="rtl">{{product.price}} جنيه</div>
+            <div class="single-product-price" dir="rtl">{{product.sale_price}} جنيه </div> 
+            {% else %}
+            <div class="single-product-price" dir="rtl">{{product.price}} جنيه </div> 
+            {% endif %}
           </div>
           <p dir="rtl">
             {{product.description}}
@@ -338,12 +339,12 @@
             <h5 class="product-title"><a href="/product/{{product.id}}">{{product.title}}</a></h5>
             {% if product.sale_price  %}
             <div class="product-price-wrap">
-              <div class="product-price product-price-old">{{product.price}}</div>
-              <div class="product-price">{{product.sale_price}}</div>
+              <div class="product-price product-price-old" dir="rtl">{{product.price}} جنيه</div>
+              <div class="product-price" dir="rtl">{{product.sale_price}} جنيه</div>
             </div>
             <span class="product-badge product-badge-sale">Sale</span>
             {% else%}
-            <div class="product-price">{{product.price}}</div>
+            <div class="product-price" dir="rtl">{{product.price}} جنيه</div>
             {%endif%}
           </div>
           <div class="product-button-wrap">

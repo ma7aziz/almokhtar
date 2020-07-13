@@ -32,7 +32,12 @@
                             <td>
                                 <a class="table-cart-link" href="/product/{{i.item.id}}">{{i}}</a>
                             </td>
-                            <td>{{i.item.price}}</td>
+                            {% if i.item.sale_price %}
+            
+                                <td>{{i.item.sale_price}} </td>
+                                {% else %}
+                                <td>{{ i.item.price }}</td>
+                                {% endif %}
                             <td>
                                 {{i.qty}}
                             </td>
@@ -53,7 +58,7 @@
                                             <td>Free</td>
                                         </tr> -->
                                         <tr dir="rtl">
-                                            <td>الأجمالي</td>
+                                            <td> الأجمالي وخدمة التوصيل </td>
                                             <td>{{order.price}}</td>
                                         </tr>
                                     </tbody>

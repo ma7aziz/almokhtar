@@ -106,14 +106,20 @@
                 </a>
                 <a class="table-cart-link" href="/product/{{i.item.id}}">{{i}}</a>
               </td>
-              <td>{{i.item.price}}</td>
+
+              {% if i.item.sale_price %}
+            
+              <td>{{i.item.sale_price}} </td>
+              {% else %}
+              <td>{{ i.item.price }}</td>
+              {% endif %}
               <td>
                 <div class="table-cart-stepper">
                   {{i.qty}}
                   <!-- <input class="form-input"  required type="number" data-zeros="true" value="{{i.qty}}" min="1" max="1000"> -->
                 </div>
               </td>
-              <td>{{i.total_price}}</td>
+              <td dir="rtl">{{i.total_price}} جنيه</td>
             </tr>
             {% endfor %}
           </tbody>
@@ -132,15 +138,15 @@
               <tbody>
                 <tr>
                   <td>اجمالي المنتجات</td>
-                  <td>{{cart.cart_price}}</td>
+                  <td>{{cart.cart_price}}  جنيه</td>
                 </tr>
                 <tr>
                   <td>خدمة التوصيل</td>
-                  <td>25</td>
+                  <td>25 جنيه</td>
                 </tr>
                 <tr>
                   <td>الاجمالي</td>
-                  <td>{{cart.cart_price|add:25}}</td>
+                  <td>{{cart.cart_price|add:25}} جنيه</td>
                 </tr>
               </tbody>
             </table>

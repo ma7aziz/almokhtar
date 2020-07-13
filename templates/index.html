@@ -459,17 +459,20 @@
                 <!-- Product-->
                 <article class="product wow fadeInRight">
                     <div class="product-body">
+                        <a href="/product/{{pro.id}}">
                         <div class="product-figure"><img src="{{pro.main_image.url}}" alt="" width="196" height="134" />
+
                         </div>
+                    </a>
                         <h5 class="product-title"><a href="/product/{{pro.id}}">{{pro.title}}</a></h5>
                         {% if pro.sale_price  %}
                         <div class="product-price-wrap">
-                            <div class="product-price product-price-old">{{pro.price}}</div>
-                            <div class="product-price">{{pro.sale_price}}</div>
+                            <div class="product-price product-price-old" dir="rtl">{{pro.price}} جنيه</div>
+                            <div class="product-price" dir="rtl">{{pro.sale_price}} جنيه</div>
                         </div>
                         <span class="product-badge product-badge-sale">Sale</span>
                         {% else%}
-                        <div class="product-price">{{pro.price}}</div>
+                        <div class="product-price" dir="rtl">{{pro.price}} جنيه</div>
                         {%endif%}
                     </div>
                     <!-- <span class="product-badge product-badge-sale">Sale</span> -->

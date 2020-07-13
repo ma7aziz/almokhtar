@@ -27,7 +27,7 @@
         <thead>
           <tr>
           
-            <th>المنتج</th>
+            <th >المنتج</th>
             <th>السعر</th>
             <th>الكمية</th>
             <th>السعر الأجمالي</th>
@@ -38,13 +38,18 @@
           <tr>
             
             <td>
-              <a href="{%url 'remove_cart' i.id %}" style="margin-right: 25px; color: red" title="مسح">-</a>
+              <a href="{%url 'remove_cart' i.id %}" style="margin-right: 25px; color: red" title="مسح"><i class="fas fa-minus-circle"></i></a>
               <a class="table-cart-figure" href="/product/{{i.item.id}}">
                 <img src="{{i.item.main_image.url}}" alt="" width="146" height="132" />
               </a>
               <a class="table-cart-link" href="/product/{{i.item.id}}">{{i}}</a>
             </td>
-            <td>{{i.item.price}}</td>
+            {% if i.item.sale_price %}
+            
+            <td>{{i.item.sale_price}} </td>
+            {% else %}
+            <td>{{ i.item.price }}</td>
+            {% endif %}
             <td>
               {{i.qty}}
 
@@ -52,7 +57,7 @@
                 <input class="form-input" type="number" data-zeros="true" value="{{i.qty}}" min="1" max="1000">
               </div> -->
             </td>
-            <td>{{i.total_price}}</td>
+            <td dir="rtl">{{i.total_price}} جنيه</td>
           </tr>
           {% endfor %}
         </tbody>
@@ -76,7 +81,7 @@
           <div>
             <div class="group-md group-middle" dir="rtl">
               <div class="heading-5 font-weight-medium text-gray-500">الاجمالي</div>
-              <div class="heading-3 font-weight-normal">{{cart.cart_price}}</div>
+              <div class="heading-3 font-weight-normal">{{cart.cart_price}} جنيه</div>
             </div>
           </div> 
         </div>
